@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hounter</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Hounter" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__blur blur"></div>
+        <a class="logo">
+          <svg class="logo__icon" width="36" height="36">
+            <use href="./assets/sprite.svg#icon_logo"></use>
+          </svg>
+          <span class="logo__title">Hounter</span>
+        </a>
+        <nav class="nav">
+          <ul class="nav__pages">
+            <li class="nav__page">
+              <a class="nav__link" href="./about">About Us</a>
+            </li>
+            <li class="nav__page">
+              <a class="nav__link" href="./article">Article</a>
+            </li>
+            <li class="nav__page">
+              <select class="nav__link nav__select" aria-placeholder="Property">
+                <option class="nav__option" value="" disabled selected>
+                  Property
+                </option>
+                <option class="nav__option" value="house">House</option>
+                <option class="nav__option" value="villa">Villa</option>
+                <option class="nav__option" value="apartment">Apartment</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn nav__btn" type="button" data-signup>Sign Up!</button>
+      </div>
+    </header>
+    <main>
+      <!-----Hero----->
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__blur blur"></div>
+          <div class="hero__left">
+            <h1 class="hero__title">
+              find the place to<br />
+              live <span class="hero__title-transparent">your dreams</span
+              ><br />
+              easily here
+            </h1>
+            <p class="hero__paragraph">
+              Everything you need about finding your place to live will be here,
+              where it will be easier for you
+            </p>
+            <label class="hero__label" for="hero__search">
+              <svg class="hero__icon-location" width="24" height="24">
+                <use href="./assets/sprite.svg#icon_location"></use>
+              </svg>
+              <input
+                class="hero__input"
+                id="hero__search"
+                placeholder="Search for the location you want!"
+              />
+              <button type="button" class="btn hero__btn">
+                <span class="hero__btn-span">Search</span>
+                <svg class="hero__icon-arrow" width="24" height="24">
+                  <use href="./assets/sprite.svg#icon_arrow-right"></use>
+                </svg>
+              </button>
+            </label>
+            <p class="partners__paragraph">Our Partnership</p>
+            <ul class="partners__list">
+              <li class="partners__item">
+                <img
+                  class="partners__img"
+                  srcset="
+                    ./assets/images/hero_partner_logo_1@2x.png 2x,
+                    ./assets/images/hero_partner_logo_1@3x.png 3x
+                  "
+                  src="./assets/images/hero_partner_logo_1.png"
+                  alt="logo whith company name"
+                  width="82"
+                  height="64"
+                />
+              </li>
+              <li class="partners__item">
+                <img
+                  class="partners__img"
+                  srcset="
+                    ./assets/images/hero_partner_logo_2@2x.png 2x,
+                    ./assets/images/hero_partner_logo_2@3x.png 3x
+                  "
+                  src="./assets/images/hero_partner_logo_2.png"
+                  alt="logo whith company name"
+                  width="82"
+                  height="64"
+                />
+              </li>
+              <li class="partners__item">
+                <img
+                  class="partners__img"
+                  srcset="
+                    ./assets/images/hero_partner_logo_3@2x.png 2x,
+                    ./assets/images/hero_partner_logo_3@3x.png 3x
+                  "
+                  src="./assets/images/hero_partner_logo_3.png"
+                  alt="logo whith company name"
+                  width="82"
+                  height="64"
+                />
+              </li>
+              <li class="partners__item">
+                <img
+                  class="partners__img"
+                  srcset="
+                    ./assets/images/hero_partner_logo_4@2x.png 2x,
+                    ./assets/images/hero_partner_logo_4@3x.png 3x
+                  "
+                  src="./assets/images/hero_partner_logo_4.png"
+                  alt="logo whith company name"
+                  width="82"
+                  height="64"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="hero__right">
+            <ul class="hero__slider">
+              <li class="hero__slide">
+                <div class="hero__slide-img-container">
+                  <img
+                    class="hero__slide-img"
+                    srcset="
+                      ./assets/images/avatar_08@2x.png 2x,
+                      ./assets/images/avatar_08@3x.png 3x
+                    "
+                    src="./assets/images/avatar_08.png"
+                    alt="user avatar"
+                    width="56"
+                    height="56"
+                  />
+                  <img
+                    class="hero__slide-img"
+                    srcset="
+                      ./assets/images/avatar_05@2x.png 2x,
+                      ./assets/images/avatar_05@3x.png 3x
+                    "
+                    src="./assets/images/avatar_05.png"
+                    alt="user avatar"
+                    width="56"
+                    height="56"
+                  />
+                  <img
+                    class="hero__slide-img"
+                    srcset="
+                      ./assets/images/avatar_01@2x.png 2x,
+                      ./assets/images/avatar_01@3x.png 3x
+                    "
+                    src="./assets/images/avatar_01.png"
+                    alt="user avatar"
+                    width="56"
+                    height="56"
+                  />
+                </div>
+                <div class="hero__slide-text-container">
+                  <h4 class="hero__slide-title">1K+ People</h4>
+                  <p class="hero__slide-paragraph">Successfully Getting Home</p>
+                </div>
+              </li>
+              <li class="hero__slide">
+                <div class="hero__slide-img-container">
+                  <img
+                    class="hero__slide-img"
+                    srcset="
+                      ./assets/images/house_01@2x.png 2x,
+                      ./assets/images/house_01@3x.png 3x
+                    "
+                    src="./assets/images/house_01.png"
+                    alt="user house"
+                    width="56"
+                    height="56"
+                  />
+                </div>
+                <div class="hero__slide-text-container">
+                  <h4 class="hero__slide-title">56 Houses</h4>
+                  <p class="hero__slide-paragraph">Sold Monthly</p>
+                </div>
+              </li>
+              <li class="hero__slide">
+                <div class="hero__slide-img-container">
+                  <img
+                    class="hero__slide-img"
+                    srcset="
+                      ./assets/images/avatar_06@2x.png 2x,
+                      ./assets/images/avatar_06@3x.png 3x
+                    "
+                    src="./assets/images/avatar_06.png"
+                    alt="user avatar"
+                    width="56"
+                    height="56"
+                  />
+                </div>
+                <div class="hero__slide-text-container">
+                  <h4 class="hero__slide-title">4K+</h4>
+                  <p class="hero__slide-paragraph">
+                    People Looking for New Homes
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-----Recommendation----->
+      <section class="recommendation">
+        <div class="container recommendation__container">
+          <div class="recommendation__blur blur"></div>
+          <div class="recommendation__nav-container">
+            <div class="recommendation__title-container">
+              <p class="recommendation__section-name section-name">
+                Our Recommendation
+              </p>
+              <h2 class="recommendation__title section-title">
+                Featured House
+              </h2>
+            </div>
+            <fieldset
+              class="recommendation__radioset"
+              role="group"
+              id="property"
+            >
+              <label class="recommendation__label btn" for="house">
+                <svg
+                  class="recommendation__icon-radio"
+                  viewbox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./assets/sprite.svg#icon_house"></use>
+                </svg>
+                <span>House</span>
+              </label>
+              <input
+                class="recommendation__input"
+                type="radio"
+                id="house"
+                name="property"
+                value="house"
+                checked
+              />
+              <label class="recommendation__label btn" for="villa">
+                <svg class="recommendation__icon-radio" width="24" height="24">
+                  <use href="./assets/sprite.svg#icon_villa"></use>
+                </svg>
+                <span>Villa</span>
+              </label>
+              <input
+                class="recommendation__input"
+                type="radio"
+                id="villa"
+                name="property"
+                value="villa"
+              />
+              <label class="recommendation__label btn" for="apartment">
+                <svg class="recommendation__icon-radio" width="24" height="24">
+                  <use href="./assets/sprite.svg#icon_apartment"></use>
+                </svg>
+                <span>Apartment</span>
+              </label>
+              <input
+                class="recommendation__input"
+                type="radio"
+                id="apartment"
+                name="property"
+                value="apartment"
+              />
+            </fieldset>
+            <ul class="recommendation__btns">
+              <li class="recommendation__btn btn">
+                <svg
+                  class="recommendation__icon-arrow--left"
+                  width="28"
+                  height="28"
+                >
+                  <use href="./assets/sprite.svg#icon_arrow-left"></use>
+                </svg>
+              </li>
+              <li class="recommendation__btn btn">
+                <svg
+                  class="recommendation__icon-arrow--right"
+                  width="28"
+                  height="28"
+                >
+                  <use href="./assets/sprite.svg#icon_arrow-right"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <ul class="recommendation__slides">
+            <li class="recommendation__slide">
+              <img
+                class="recommendation__slide-img"
+                srcset="
+                  ./assets/images/recom_slider_01@2x.png 2x,
+                  ./assets/images/recom_slider_01@3x.png 3x
+                "
+                src="./assets/images/recom_slider_01.png"
+                alt="house picture"
+                width="340"
+                height="382"
+              />
+              <div class="recommendation__slide-label">
+                <svg
+                  class="recommendation__slide-label-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./assets/sprite.svg#icon_fire"></use>
+                </svg>
+                <p class="recommendation__slide-label-name">Popular</p>
+              </div>
+              <h3 class="recommendation__slide-title">Roselands House</h3>
+              <p class="recommendation__slide-price">
+                $ <span>35.000.000</span>
+              </p>
+              <div class="recommendation__slide-agent">
+                <img
+                  class="recommendation__slide-agent-img"
+                  srcset="
+                    ./assets/images/avatar_01@2x.png 2x,
+                    ./assets/images/avatar_01@3x.png 3x
+                  "
+                  src="./assets/images/avatar_01.png"
+                  alt="user avatar"
+                  width="40"
+                  height="40"
+                />
+                <div class="recommendation__slide-agent-title">
+                  <p class="recommendation__slide-agent-name">Dianne Russell</p>
+                  <p class="recommendation__slide-agent-qualification">
+                    Manchester, Kentucky
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="recommendation__slide">
+              <img
+                class="recommendation__slide-img"
+                srcset="
+                  ./assets/images/recom_slider_02@2x.png 2x,
+                  ./assets/images/recom_slider_02@3x.png 3x
+                "
+                src="./assets/images/recom_slider_02.png"
+                alt="house picture"
+                width="340"
+                height="382"
+              />
+              <div class="recommendation__slide-label">
+                <svg
+                  viewbox="0 0 24 24"
+                  class="recommendation__slide-label-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./assets/sprite.svg#icon_house"></use>
+                </svg>
+                <p class="recommendation__slide-label-name">New house</p>
+              </div>
+              <h3 class="recommendation__slide-title">Woodlandside</h3>
+              <p class="recommendation__slide-price">
+                $ <span>20.000.000</span>
+              </p>
+              <div class="recommendation__slide-agent">
+                <img
+                  class="recommendation__slide-agent-img"
+                  srcset="
+                    ./assets/images/avatar_11@2x.png 2x,
+                    ./assets/images/avatar_11@3x.png 3x
+                  "
+                  src="./assets/images/avatar_11.png"
+                  alt="user avatar"
+                  width="40"
+                  height="40"
+                />
+                <div class="recommendation__slide-agent-title">
+                  <p class="recommendation__slide-agent-name">Robert Fox</p>
+                  <p class="recommendation__slide-agent-qualification">
+                    Dr. San Jose, South Dakota
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="recommendation__slide">
+              <img
+                class="recommendation__slide-img"
+                srcset="
+                  ./assets/images/recom_slider_03@2x.png 2x,
+                  ./assets/images/recom_slider_03@3x.png 3x
+                "
+                src="./assets/images/recom_slider_03.png"
+                alt="house picture"
+                width="340"
+                height="382"
+              />
+              <div class="recommendation__slide-label">
+                <svg
+                  class="recommendation__slide-label-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./assets/sprite.svg#icon_wallet"></use>
+                </svg>
+                <p class="recommendation__slide-label-name">Best Deals</p>
+              </div>
+              <h3 class="recommendation__slide-title">The Old Lighthouse</h3>
+              <p class="recommendation__slide-price">
+                $ <span>44.000.000</span>
+              </p>
+              <div class="recommendation__slide-agent">
+                <img
+                  class="recommendation__slide-agent-img"
+                  srcset="
+                    ./assets/images/avatar_10@2x.png 2x,
+                    ./assets/images/avatar_10@3x.png 3x
+                  "
+                  src="./assets/images/avatar_10.png"
+                  alt="user avatar"
+                  width="40"
+                  height="40"
+                />
+                <div class="recommendation__slide-agent-title">
+                  <p class="recommendation__slide-agent-name">
+                    Ronald Richards
+                  </p>
+                  <p class="recommendation__slide-agent-qualification">
+                    Santa Ana, Illinois
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="recommendation__slide">
+              <img
+                class="recommendation__slide-img"
+                srcset="
+                  ./assets/images/recom_slider_04@2x.png 2x,
+                  ./assets/images/recom_slider_04@3x.png 3x
+                "
+                src="./assets/images/recom_slider_04.png"
+                alt="house picture"
+                width="340"
+                height="382"
+              />
+              <div class="recommendation__slide-label">
+                <svg
+                  class="recommendation__slide-label-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./assets/sprite.svg#icon_fire"></use>
+                </svg>
+                <p class="recommendation__slide-label-name">Popular</p>
+              </div>
+              <h3 class="recommendation__slide-title">Cosmo's House</h3>
+              <p class="recommendation__slide-price">
+                $ <span>22.000.000</span>
+              </p>
+              <div class="recommendation__slide-agent">
+                <img
+                  class="recommendation__slide-agent-img"
+                  srcset="
+                    ./assets/images/avatar_09@2x.png 2x,
+                    ./assets/images/avatar_09@3x.png 3x
+                  "
+                  src="./assets/images/avatar_09.png"
+                  alt="user avatar"
+                  width="40"
+                  height="40"
+                />
+                <div class="recommendation__slide-agent-title">
+                  <p class="recommendation__slide-agent-name">Jenny Wilson</p>
+                  <p class="recommendation__slide-agent-qualification">
+                    Preston Rd. Inglewood, Maine 98380
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-----Sell----->
+      <section class="sell">
+        <div class="container sell__container">
+          <div class="sell__blur blur"></div>
+          <div class="sell__left-side">
+            <div class="sell__title-container">
+              <p class="recommendation__section-name section-name">
+                Ready to Sell!
+              </p>
+              <h2 class="recommendation__title section-title">
+                Let’s tour and see our house!
+              </h2>
+            </div>
+            <p class="sell__text">
+              Houses recommended by our partners that have been curated to
+              become the home of your dreams!
+            </p>
+            <p class="sell__details-title">House Detail</p>
+            <ul class="sell__details">
+              <div class="sell__details-box">
+                <li class="sell__detail">
+                  <svg class="sell__details-icon" width="32" height="32">
+                    <use href="./assets/sprite.svg#icon_bedroom"></use>
+                  </svg>
+                  <span class="sell__detail-value">4</span>
+                  <span class="sell__detail-name">Bedrooms</span>
+                </li>
+                <li class="sell__detail">
+                  <svg class="sell__details-icon" width="32" height="32">
+                    <use href="./assets/sprite.svg#icon_carport"></use>
+                  </svg>
+                  <span class="sell__detail-value">1</span>
+                  <span class="sell__detail-name">Carport</span>
+                </li>
+              </div>
+              <div class="sell__details-box">
+                <li class="sell__detail">
+                  <svg class="sell__details-icon" width="32" height="32">
+                    <use href="./assets/sprite.svg#icon_bathroom"></use>
+                  </svg>
+                  <span class="sell__detail-value">2</span>
+                  <span class="sell__detail-name">Bathrooms</span>
+                </li>
+                <li class="sell__detail">
+                  <svg class="sell__details-icon" width="32" height="32">
+                    <use href="./assets/sprite.svg#icon_floor"></use>
+                  </svg>
+                  <span class="sell__detail-value">2</span>
+                  <span class="sell__detail-name">Floors</span>
+                </li>
+              </div>
+            </ul>
+            <div class="sell__agent">
+              <div class="sell_agent-box">
+                <img
+                  class="sell__agent-img"
+                  srcset="
+                    ./assets/images/avatar_01@2x.png 2x,
+                    ./assets/images/avatar_01@3x.png 3x
+                  "
+                  src="./assets/images/avatar_01.png"
+                  alt="user avatar"
+                  width="56"
+                  height="56"
+                />
+                <div class="sell__agent-title">
+                  <p class="sell__agent-name">Dianne Russell</p>
+                  <p class="sell__agent-qualification">Manchester, Kentucky</p>
+                </div>
+              </div>
+              <button class="btn sell_btn">
+                <svg class="sell__btn-icon" width="24" height="24">
+                  <use href="./assets/sprite.svg#icon_call"></use>
+                </svg>
+                <span class="sell__btn-text">Contact Now</span>
+              </button>
+            </div>
+          </div>
+          <div class="sell__right-side">
+            <ul class="sell__slides">
+              <li class="sell__slide">
+                <img
+                  class="sell__slide-img"
+                  srcset="
+                    ./assets/images/sell_slider_01@2x.png 2x,
+                    ./assets/images/sell_slider_01@3x.png 3x
+                  "
+                  src="./assets/images/sell_slider_01.png"
+                  alt="house details picture"
+                  width="296"
+                  height="168"
+                />
+              </li>
+              <li class="sell__slide">
+                <img
+                  class="sell__slide-img"
+                  srcset="
+                    ./assets/images/sell_slider_02@2x.png 2x,
+                    ./assets/images/sell_slider_02@3x.png 3x
+                  "
+                  src="./assets/images/sell_slider_02.png"
+                  alt="house details picture"
+                  width="96"
+                  height="80"
+                />
+              </li>
+              <li class="sell__slide">
+                <img
+                  class="sell__slide-img"
+                  srcset="
+                    ./assets/images/sell_slider_03@2x.png 2x,
+                    ./assets/images/sell_slider_03@3x.png 3x
+                  "
+                  src="./assets/images/sell_slider_03.png"
+                  alt="house details picture"
+                  width="96"
+                  height="80"
+                />
+              </li>
+              <li class="sell__slide">
+                <img
+                  class="sell__slide-img"
+                  srcset="
+                    ./assets/images/sell_slider_04@2x.png 2x,
+                    ./assets/images/sell_slider_04@3x.png 3x
+                  "
+                  src="./assets/images/sell_slider_04.png"
+                  alt="house details picture"
+                  width="488"
+                  height="416"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-----Review----->
+      <section class="review">
+        <div class="container review__container">
+          <div class="review__blur blur"></div>
+          <div class="review__title-container">
+            <p class="review__section-name section-name">See Our Review</p>
+            <h2 class="review__title section-title">
+              What Our User Say About Us
+            </h2>
+          </div>
+          <ul class="review__slides">
+            <li class="review__slide">
+              <img
+                class="review__slide-img"
+                srcset="
+                  ./assets/images/review_slider_01@2x.png 2x,
+                  ./assets/images/review_slider_01@3x.png 3x
+                "
+                src="./assets/images/review_slider_01.png"
+                alt="house picture"
+                width="740"
+                height="400"
+              />
+              <div class="review__slide-label">
+                <h3 class="review__slide-title">My house sold out fast!</h3>
+                <p class="review__slide-text">
+                  I was finally able to sell my house quickly through Hounter by
+                  immediately setting me up with people who wanted my house. I
+                  also do not get a discount from the sale of my house. Awesome!
+                </p>
+                <div class="review__slide-agent">
+                  <div class="review__slide-agent-box">
+                    <img
+                      class="review__slide-agent-img"
+                      srcset="
+                        ./assets/images/avatar_12@2x.png 2x,
+                        ./assets/images/avatar_12@3x.png 3x
+                      "
+                      src="./assets/images/avatar_12.png"
+                      alt="user avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="review__slide-agent-title">
+                      <p class="review__slide-agent-name">Courtney Henry</p>
+                      <p class="review__slide-agent-qualification">
+                        CEO Andarafish
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review__slide-agent-box">
+                    <svg
+                      class="review__slide-agent-icon"
+                      width="28"
+                      height="28"
+                    >
+                      <use href="./assets/sprite.svg#icon_star"></use>
+                    </svg>
+                    <p class="review__slide-agent-rate">4.3</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="review__slide">
+              <img
+                class="review__slide-img"
+                srcset="
+                  ./assets/images/review_slider_02@2x.png 2x,
+                  ./assets/images/review_slider_02@3x.png 3x
+                "
+                src="./assets/images/review_slider_02.png"
+                alt="house picture"
+                width="740"
+                height="400"
+              />
+              <div class="review__slide-label">
+                <h3 class="review__slide-title">
+                  Best! I got the house I wanted through Hounter
+                </h3>
+                <p class="review__slide-text">
+                  Through this website I can get a house with the type and
+                  specifications I want very easily, without a complicated
+                  process to be able to find information on the house we want.
+                </p>
+                <div class="review__slide-agent">
+                  <div class="review__slide-agent-box">
+                    <img
+                      class="review__slide-agent-img"
+                      srcset="
+                        ./assets/images/avatar_01@2x.png 2x,
+                        ./assets/images/avatar_01@3x.png 3x
+                      "
+                      src="./assets/images/avatar_01.png"
+                      alt="user avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="review__slide-agent-title">
+                      <p class="review__slide-agent-name">Dianne Russell</p>
+                      <p class="review__slide-agent-qualification">
+                        Manager Director
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review__slide-agent-box">
+                    <svg
+                      class="review__slide-agent-icon"
+                      width="28"
+                      height="28"
+                    >
+                      <use href="./assets/sprite.svg#icon_star"></use>
+                    </svg>
+                    <p class="review__slide-agent-rate">4.6</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="review__slide">
+              <img
+                class="review__slide-img"
+                srcset="
+                  ./assets/images/review_slider_03@2x.png 2x,
+                  ./assets/images/review_slider_03@3x.png 3x
+                "
+                src="./assets/images/review_slider_03.png"
+                alt="house picture"
+                width="740"
+                height="400"
+              />
+              <div class="review__slide-label">
+                <h3 class="review__slide-title">
+                  Through the Hounter, I can get a house for my self
+                </h3>
+                <p class="review__slide-text">
+                  By looking for information about what kind of house we want,
+                  we managed to get the house we wanted very quickly, and
+                  directly connected with the seller to be able to ask about the
+                  details, very helpful!
+                </p>
+                <div class="review__slide-agent">
+                  <div class="review__slide-agent-box">
+                    <img
+                      class="review__slide-agent-img"
+                      srcset="
+                        ./assets/images/avatar_08@2x.png 2x,
+                        ./assets/images/avatar_08@3x.png 3x
+                      "
+                      src="./assets/images/avatar_08.png"
+                      alt="user avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="review__slide-agent-title">
+                      <p class="review__slide-agent-name">Esther Howard</p>
+                      <p class="review__slide-agent-qualification">
+                        Head of Marketing
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review__slide-agent-box">
+                    <svg
+                      class="review__slide-agent-icon"
+                      width="28"
+                      height="28"
+                    >
+                      <use href="./assets/sprite.svg#icon_star"></use>
+                    </svg>
+                    <p class="review__slide-agent-rate">4.6</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-----Article----->
+      <section class="article">
+        <div class="container article__container">
+          <div class="article__blur blur"></div>
+          <div class="article__title-container">
+            <p class="article__section-name section-name">
+              See tips and trick from our partnership
+            </p>
+            <h2 class="article__title section-title">
+              Find out more about selling and buying homes
+            </h2>
+          </div>
+          <a class="btn article__link">
+            <span class="article__link-span">More Article</span>
+          </a>
+          <div class="article__slides-container">
+            <div class="article__slides-box">
+              <ul class="article__slides">
+                <li class="article__slide">
+                  <div class="article__slide-img-box">
+                    <img
+                      class="article__slide-img"
+                      srcset="
+                        ./assets/images/article_slider_01@2x.png 2x,
+                        ./assets/images/article_slider_01@3x.png 3x
+                      "
+                      src="./assets/images/article_slider_01.png"
+                      alt="house picture"
+                      width="200"
+                      height="144"
+                    />
+                  </div>
+                  <div class="article__slide-label">
+                    <div class="article__slide-agent-box">
+                      <img
+                        class="article__slide-agent-img"
+                        srcset="
+                          ./assets/images/avatar_01@2x.png 2x,
+                          ./assets/images/avatar_01@3x.png 3x
+                        "
+                        src="./assets/images/avatar_01.png"
+                        alt="user avatar"
+                        width="32"
+                        height="32"
+                      />
+                      <p class="article__slide-agent-name">Dianne Russell</p>
+                    </div>
+                    <h3 class="article__slide-title">
+                      The things we need to check when we want to buy a house
+                    </h3>
+                    <div class="article__slide-info">
+                      <svg
+                        class="article__slide-agent-icon"
+                        width="24"
+                        height="24"
+                      >
+                        <use href="./assets/sprite.svg#icon_watch"></use>
+                      </svg>
+                      <p class="article__slide-agent-text">
+                        <span class="article__slide-agent-text-time">4</span>
+                        <span class="article__slide-agent-text-time-title"
+                          >min read</span
+                        >
+                        |
+                        <span class="article__slide-agent-text-data"
+                          >25 Apr 2021</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="article__slide">
+                  <div class="article__slide-img-box">
+                    <img
+                      class="article__slide-img"
+                      srcset="
+                        ./assets/images/article_slider_02@2x.png 2x,
+                        ./assets/images/article_slider_02@3x.png 3x
+                      "
+                      src="./assets/images/article_slider_02.png"
+                      alt="house picture"
+                      width="200"
+                      height="144"
+                    />
+                  </div>
+                  <div class="article__slide-label">
+                    <div class="article__slide-agent-box">
+                      <img
+                        class="article__slide-agent-img"
+                        srcset="
+                          ./assets/images/avatar_02@2x.png 2x,
+                          ./assets/images/avatar_02@3x.png 3x
+                        "
+                        src="./assets/images/avatar_02.png"
+                        alt="user avatar"
+                        width="32"
+                        height="32"
+                      />
+                      <p class="article__slide-agent-name">Courtney Henry</p>
+                    </div>
+                    <h3 class="article__slide-title">
+                      7 Ways to distinguish the quality of the house we want to
+                      buy
+                    </h3>
+                    <div class="article__slide-info">
+                      <svg
+                        class="article__slide-agent-icon"
+                        width="24"
+                        height="24"
+                      >
+                        <use href="./assets/sprite.svg#icon_watch"></use>
+                      </svg>
+                      <p class="article__slide-agent-text">
+                        <span class="article__slide-agent-text-time">6</span>
+                        <span class="article__slide-agent-text-time-title"
+                          >min read</span
+                        >
+                        |
+                        <span class="article__slide-agent-text-data"
+                          >24 Apr 2021</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="article__slide">
+                  <div class="article__slide-img-box">
+                    <img
+                      class="article__slide-img"
+                      srcset="
+                        ./assets/images/article_slider_03@2x.png 2x,
+                        ./assets/images/article_slider_03@3x.png 3x
+                      "
+                      src="./assets/images/article_slider_03.png"
+                      alt="house picture"
+                      width="200"
+                      height="144"
+                    />
+                  </div>
+                  <div class="article__slide-label">
+                    <div class="article__slide-agent-box">
+                      <img
+                        class="article__slide-agent-img"
+                        srcset="
+                          ./assets/images/avatar_03@2x.png 2x,
+                          ./assets/images/avatar_03@3x.png 3x
+                        "
+                        src="./assets/images/avatar_03.png"
+                        alt="user avatar"
+                        width="32"
+                        height="32"
+                      />
+                      <p class="article__slide-agent-name">Darlene Robertson</p>
+                    </div>
+                    <h3 class="article__slide-title">
+                      The best way to know the quality of the house we want to
+                      buy
+                    </h3>
+                    <div class="article__slide-info">
+                      <svg
+                        class="article__slide-agent-icon"
+                        width="24"
+                        height="24"
+                      >
+                        <use href="./assets/sprite.svg#icon_watch"></use>
+                      </svg>
+                      <p class="article__slide-agent-text">
+                        <span class="article__slide-agent-text-time">2</span>
+                        <span class="article__slide-agent-text-time-title"
+                          >min read</span
+                        >
+                        |
+                        <span class="article__slide-agent-text-data"
+                          >24 Apr 2021</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="article__slide top">
+                <img
+                  class="article__slide-img top"
+                  srcset="
+                    ./assets/images/article_slider_04@2x.png 2x,
+                    ./assets/images/article_slider_04@3x.png 3x
+                  "
+                  src="./assets/images/article_slider_04.png"
+                  alt="house picture"
+                  width="560"
+                  height="280"
+                />
+                <div class="article__slide-label top">
+                  <div class="article__slide-agent-box top">
+                    <img
+                      class="article__slide-agent-img top"
+                      srcset="
+                        ./assets/images/avatar_04@2x.png 2x,
+                        ./assets/images/avatar_04@3x.png 3x
+                      "
+                      src="./assets/images/avatar_04.png"
+                      alt="user avatar"
+                      width="32"
+                      height="32"
+                    />
+                    <p class="article__slide-agent-name top">
+                      Cameron Williamson
+                    </p>
+                  </div>
+                  <h3 class="article__slide-title top">
+                    12 Things to know before buying a house
+                  </h3>
+                  <p class="article__slide-text top">
+                    Want to buy a house but are unsure about what we should
+                    know, here I will try to explain what we should know and
+                    check when we want to buy a house
+                  </p>
+                  <div class="article__slide-info top">
+                    <svg
+                      class="article__slide-agent-icon top"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./assets/sprite.svg#icon_watch"></use>
+                    </svg>
+                    <p class="article__slide-agent-text top">
+                      <span class="article__slide-agent-text-time top">8</span>
+                      <span class="article__slide-agent-text-time-title top"
+                        >min read</span
+                      >
+                      |
+                      <span class="article__slide-agent-text-data top"
+                        >25 Apr 2021</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----Subscribe----->
+      <section class="subscribe">
+        <div class="container subscribe__container">
+          <div class="subscribe__blur blur"></div>
+          <h2 class="subscribe__title section-title">
+            Subscribe For More Info<br />and update from Hounter
+          </h2>
+          <label class="subscribe__label" for="subscribe__field">
+            <svg class="subscribe__icon-location" width="24" height="24">
+              <use href="./assets/sprite.svg#icon_mail"></use>
+            </svg>
+            <input
+              class="subscribe__input"
+              id="subscribe__field"
+              placeholder="Your email here"
+            />
+            <button type="button" class="btn subscribe__btn">
+              <span class="subscribe__btn-span">Subsribe Now</span>
+            </button>
+          </label>
+          <img
+            class="subscribe__img"
+            srcset="
+              ./assets/images/subscribe_02@2x.png 2x,
+              ./assets/images/subscribe_02@3x.png 3x
+            "
+            src="./assets/images/subscribe_02.png"
+            alt="house picture"
+            width="81"
+            height="81"
+          />
+          <img
+            class="subscribe__img"
+            srcset="
+              ./assets/images/subscribe_03@2x.png 2x,
+              ./assets/images/subscribe_03@3x.png 3x
+            "
+            src="./assets/images/subscribe_03.png"
+            alt="house picture"
+            width="54"
+            height="54"
+          />
+          <img
+            class="subscribe__img"
+            srcset="
+              ./assets/images/subscribe_04@2x.png 2x,
+              ./assets/images/subscribe_04@3x.png 3x
+            "
+            src="./assets/images/subscribe_04.png"
+            alt="house picture"
+            width="70"
+            height="70"
+          />
+          <img
+            class="subscribe__img"
+            srcset="
+              ./assets/images/subscribe_05@2x.png 2x,
+              ./assets/images/subscribe_05@3x.png 3x
+            "
+            src="./assets/images/subscribe_05.png"
+            alt="house picture"
+            width="55"
+            height="55"
+          />
+          <img
+            class="subscribe__agent-img"
+            srcset="
+              ./assets/images/avatar_01@2x.png 2x,
+              ./assets/images/avatar_01@3x.png 3x
+            "
+            src="./assets/images/avatar_01.png"
+            alt="user avatar"
+            width="36"
+            height="36"
+          />
+          <img
+            class="subscribe__agent-img"
+            srcset="
+              ./assets/images/avatar_02@2x.png 2x,
+              ./assets/images/avatar_02@3x.png 3x
+            "
+            src="./assets/images/avatar_02.png"
+            alt="user avatar"
+            width="36"
+            height="36"
+          />
+          <img
+            class="subscribe__agent-img"
+            srcset="
+              ./assets/images/avatar_07@2x.png 2x,
+              ./assets/images/avatar_07@3x.png 3x
+            "
+            src="./assets/images/avatar_07.png"
+            alt="user avatar"
+            width="36"
+            height="36"
+          />
+          <img
+            class="subscribe__agent-img"
+            srcset="
+              ./assets/images/avatar_10@2x.png 2x,
+              ./assets/images/avatar_10@3x.png 3x
+            "
+            src="./assets/images/avatar_10.png"
+            alt="user avatar"
+            width="36"
+            height="36"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer__blur blur"></div>
+        <div class="footer__left-side">
+          <a class="logo">
+            <svg class="logo__icon" width="36" height="36">
+              <use href="./assets/sprite.svg#icon_logo"></use>
+            </svg>
+            <span class="logo__title">Hounter</span>
+          </a>
+          <p class="footer__text">
+            We provide information about properties such as houses, villas and
+            apartments to help people find their dream home
+          </p>
+          <ul class="footer__socials">
+            <li class="footer__social">
+              <svg class="footer__icon" width="32" height="32">
+                <use href="./assets/sprite.svg#icon_facebook"></use>
+              </svg>
+            </li>
+            <li class="footer__social">
+              <svg class="footer__icon" width="32" height="32">
+                <use href="./assets/sprite.svg#icon_twitter"></use>
+              </svg>
+            </li>
+            <li class="footer__social">
+              <svg class="footer__icon" width="32" height="32">
+                <use href="./assets/sprite.svg#icon_instagram"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__right-side">
+          <li class="footer__right-side-item">
+            <h3 class="footer__right-side-title">Property</h3>
+            <ul class="footer__right-side-list">
+              <li class="footer__property">
+                <a href="/house" class="footer__property-link"> House </a>
+              </li>
+              <li class="footer__property">
+                <a href="/apartment" class="footer__property-link">
+                  Apartment
+                </a>
+              </li>
+              <li class="footer__property">
+                <a href="/villa" class="footer__property-link"> Villa </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__right-side-item">
+            <h3 class="footer__right-side-title">Article</h3>
+            <ul class="footer__right-side-list">
+              <li class="footer__article">
+                <a href="/article?sort=new" class="footer__article-link">
+                  New Article
+                </a>
+              </li>
+              <li class="footer__article">
+                <a href="/article?sort=popular" class="footer__article-link">
+                  Popular Article
+                </a>
+              </li>
+              <li class="footer__article">
+                <a href="/article?sort=most-read" class="footer__article-link">
+                  Most Read
+                </a>
+              </li>
+              <li class="footer__article">
+                <a
+                  href="/article?sort=tips-tricks"
+                  class="footer__article-link"
+                >
+                  Tips & Tricks
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__right-side-item">
+            <h3 class="footer__right-side-title">Contact</h3>
+            <ul class="footer__right-side-list">
+              <li class="footer__contact">
+                <address class="footer__address">
+                  2464 Royal Ln. Mesa, New Jersey 45463
+                </address>
+              </li>
+              <li class="footer__contact">
+                <a href="mailto:info@hounter.com" class="footer__email">
+                  info@hounter.com
+                </a>
+              </li>
+              <li class="footer__contact">
+                <a href="tel:6715550110" class="footer__phone">
+                  (671) 555-0110
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
