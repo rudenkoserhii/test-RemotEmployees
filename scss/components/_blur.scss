@@ -1,0 +1,59 @@
+.blur {
+  position: absolute;
+  width: 438px;
+  height: 494px;
+z-index: -1;
+
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(45deg);
+
+  &.header__blur {
+    background-color: $blur-1;
+    left: 74px;
+    top: -162px;
+  }
+
+  &.hero__blur {
+    background-color: $blur-2;
+    left: -173px;
+    top: -77px;
+  }
+
+  &.recommendation__blur {
+    background-color: $blur-3;
+    left: 612px;
+    top: 920px;
+  }
+
+  & .sell__blur {
+    background-color: $blur-4;
+    left: -48px;
+    top: 979px;
+  }
+
+  &.review__blur {
+    background-color: $blur-5;
+    left: 228px;
+    top: 729px;
+  }
+
+  &.article__blur {
+    background-color: $blur-6;
+    left: -262px;
+    top: 202px;
+  }
+
+  &.subscribe__blur {
+    background-color: $blur-7;
+    left: 1026px;
+    top: 342px;
+  }
+
+  &.footer__blur {
+    background-color: $blur-8;
+    left: -22px;
+    top: 780px;
+  }
+
+}

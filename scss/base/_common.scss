@@ -1,0 +1,73 @@
+body {
+  background-color: $background-main;
+
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+.section-name {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+
+  max-width: fit-content;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $text-orange;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+
+  max-width: fit-content;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $text-main;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  gap: 16px;
+
+  max-width: fit-content;
+
+  background: $background-btn;
+  border-radius: 32px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  & > span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.57;
+
+    color: $text-white;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &:hover,
+  &:focus {
+    scale: 1.05;
+  }
+}

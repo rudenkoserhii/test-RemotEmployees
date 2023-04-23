@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo__title {
+  color: $text-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+
+  color: #1b1c57;
+}

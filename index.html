@@ -20,13 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <div class="header__blur blur"></div>
-        <a class="logo">
+        <a class="logo" href="/home">
           <svg class="logo__icon" width="36" height="36">
             <use href="./assets/sprite.svg#icon_logo"></use>
           </svg>
@@ -826,16 +826,16 @@
               See tips and trick from our partnership
             </p>
             <h2 class="article__title section-title">
-              Find out more about selling and buying homes
+              Find out more about<br />selling and buying homes
             </h2>
           </div>
           <a class="btn article__link">
             <span class="article__link-span">More Article</span>
           </a>
           <div class="article__slides-container">
-            <div class="article__slides-box">
-              <ul class="article__slides">
-                <li class="article__slide">
+            <ul class="article__slides">
+              <li class="article__slide">
+                <a class="article__slide-link" href="/article/id">
                   <div class="article__slide-img-box">
                     <img
                       class="article__slide-img"
@@ -887,8 +887,10 @@
                       </p>
                     </div>
                   </div>
-                </li>
-                <li class="article__slide">
+                </a>
+              </li>
+              <li class="article__slide">
+                <a class="article__slide-link" href="/article/id">
                   <div class="article__slide-img-box">
                     <img
                       class="article__slide-img"
@@ -941,8 +943,10 @@
                       </p>
                     </div>
                   </div>
-                </li>
-                <li class="article__slide">
+                </a>
+              </li>
+              <li class="article__slide">
+                <a class="article__slide-link" href="/article/id">
                   <div class="article__slide-img-box">
                     <img
                       class="article__slide-img"
@@ -995,9 +999,11 @@
                       </p>
                     </div>
                   </div>
-                </li>
-              </ul>
-              <div class="article__slide top">
+                </a>
+              </li>
+            </ul>
+            <div class="article__slide top">
+              <a class="article__slide-link top" href="/article/id">
                 <img
                   class="article__slide-img top"
                   srcset="
@@ -1054,7 +1060,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -1080,7 +1086,7 @@
             </button>
           </label>
           <img
-            class="subscribe__img"
+            class="subscribe__img first"
             srcset="
               ./assets/images/subscribe_02@2x.png 2x,
               ./assets/images/subscribe_02@3x.png 3x
@@ -1091,7 +1097,7 @@
             height="81"
           />
           <img
-            class="subscribe__img"
+            class="subscribe__img second"
             srcset="
               ./assets/images/subscribe_03@2x.png 2x,
               ./assets/images/subscribe_03@3x.png 3x
@@ -1102,7 +1108,7 @@
             height="54"
           />
           <img
-            class="subscribe__img"
+            class="subscribe__img third"
             srcset="
               ./assets/images/subscribe_04@2x.png 2x,
               ./assets/images/subscribe_04@3x.png 3x
@@ -1113,7 +1119,7 @@
             height="70"
           />
           <img
-            class="subscribe__img"
+            class="subscribe__img fourth"
             srcset="
               ./assets/images/subscribe_05@2x.png 2x,
               ./assets/images/subscribe_05@3x.png 3x
@@ -1124,7 +1130,7 @@
             height="55"
           />
           <img
-            class="subscribe__agent-img"
+            class="subscribe__agent-img first"
             srcset="
               ./assets/images/avatar_01@2x.png 2x,
               ./assets/images/avatar_01@3x.png 3x
@@ -1135,7 +1141,7 @@
             height="36"
           />
           <img
-            class="subscribe__agent-img"
+            class="subscribe__agent-img second"
             srcset="
               ./assets/images/avatar_02@2x.png 2x,
               ./assets/images/avatar_02@3x.png 3x
@@ -1146,7 +1152,7 @@
             height="36"
           />
           <img
-            class="subscribe__agent-img"
+            class="subscribe__agent-img third"
             srcset="
               ./assets/images/avatar_07@2x.png 2x,
               ./assets/images/avatar_07@3x.png 3x
@@ -1157,7 +1163,7 @@
             height="36"
           />
           <img
-            class="subscribe__agent-img"
+            class="subscribe__agent-img fourth"
             srcset="
               ./assets/images/avatar_10@2x.png 2x,
               ./assets/images/avatar_10@3x.png 3x
@@ -1170,12 +1176,11 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer__blur blur"></div>
         <div class="footer__left-side">
-          <a class="logo">
+          <a class="logo" href="/home">
             <svg class="logo__icon" width="36" height="36">
               <use href="./assets/sprite.svg#icon_logo"></use>
             </svg>
@@ -1187,19 +1192,25 @@
           </p>
           <ul class="footer__socials">
             <li class="footer__social">
-              <svg class="footer__icon" width="32" height="32">
-                <use href="./assets/sprite.svg#icon_facebook"></use>
-              </svg>
+              <a class="footer__social-link" href="/facebook">
+                <svg class="footer__icon" width="32" height="32">
+                  <use href="./assets/sprite.svg#icon_facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer__social">
-              <svg class="footer__icon" width="32" height="32">
-                <use href="./assets/sprite.svg#icon_twitter"></use>
-              </svg>
+              <a class="footer__social-link" href="/facebook">
+                <svg class="footer__icon" width="32" height="32">
+                  <use href="./assets/sprite.svg#icon_twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer__social">
-              <svg class="footer__icon" width="32" height="32">
-                <use href="./assets/sprite.svg#icon_instagram"></use>
-              </svg>
+              <a class="footer__social-link" href="/facebook">
+                <svg class="footer__icon" width="32" height="32">
+                  <use href="./assets/sprite.svg#icon_instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -1208,7 +1219,7 @@
             <h3 class="footer__right-side-title">Property</h3>
             <ul class="footer__right-side-list">
               <li class="footer__property">
-                <a href="/house" class="footer__property-link"> House </a>
+                <a href="/house" class="footer__property-link">House</a>
               </li>
               <li class="footer__property">
                 <a href="/apartment" class="footer__property-link">
@@ -1216,7 +1227,7 @@
                 </a>
               </li>
               <li class="footer__property">
-                <a href="/villa" class="footer__property-link"> Villa </a>
+                <a href="/villa" class="footer__property-link">Villa</a>
               </li>
             </ul>
           </li>
@@ -1271,5 +1282,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

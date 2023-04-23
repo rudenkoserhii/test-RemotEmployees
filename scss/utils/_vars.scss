@@ -1,0 +1,83 @@
+//blur color
+$blur-1: #82FFD2;
+$blur-2: #82F7FF;
+$blur-3: #FF9882;
+$blur-4: #FFFA82;
+$blur-5: #82FFE8;
+$blur-6: #C8FF82;
+$blur-7: #82BBFF;
+$blur-8: #B9FF82;
+
+//background color
+$background-main: #ffffff;
+$background-btn: #10B981;
+
+
+
+
+
+// text color
+$text-main: #1B1C57;
+$text-orange: #F59E0B;
+$text-secondary: #3C4563;
+$text-white: #ffffff;
+$text-black: #000000;
+$text-gray: #888B97;
+$text-grey: #626687;
+$text-footer: #0E1735;
+
+
+// filters
+$filter-avatar: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
+
+// shadows
+$shadow-first: 0px 9px 32px rgba(89, 92, 219, 0.05);
+
+// icon-color
+$icon-social: #3C4563;
+$icon-accent: #1B1C57;
+
+
+
+$text-placeholder: rgba(117, 117, 117, 0.5);
+$text-footer1: #626687;
+$text-footer2: rgba(255, 255, 255, 0.6);
+$text-blue: rgba(255, 255, 255, 0.6);
+$background-secondary: #3C4563;
+$background-footer: #2f303a;
+$background-about: rgba(47, 48, 58, 0.8);
+$background-backdrop: rgba(0, 0, 0, 0.2);
+$background-button: #188ce8;
+$background-social: rgba(255, 255, 255, 0.1);
+$background-portfolio: rgba(33, 150, 243, 0.9);
+$color-icons: #afb1b8;
+
+
+//margin and padding
+$bottoms: 60px;
+$bottoms-bg: 94px;
+$right: 30px;
+
+//transition
+$timing-function-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//borders
+$border-set1: 1px solid rgba(0, 0, 0, 0.1);
+$border-set2: 1px solid rgba(33, 33, 33, 0.2);
+$border-set3: 2px solid #212121;
+$border-set4: 1px solid rgba(236, 236, 236, 1);
+$border-set5: 1px solid #2196f3;
+$border-set6: 1px solid rgba(255, 255, 255, 0.3);
+$border-set7: 1px solid rgba(238, 238, 238, 1);
+
+//shadows
+$shadow-set1: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+$shadow-set2: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$shadow-set3: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+$shadow-set4: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);

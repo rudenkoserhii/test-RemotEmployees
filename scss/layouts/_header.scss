@@ -1,0 +1,212 @@
+.header__container {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+position: absolute;
+top: 100%;
+left: 0;
+}
+
+.header {
+position: relative;
+    // display: flex;
+
+    // border-bottom: $border-set4;
+    // height: 60px;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    // @media screen and (min-width: 767px) {
+    //     height: 80px;
+    // }
+}
+
+// .nav-contacts {
+//     width: 100%;
+
+//     z-index: 102;
+
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: space-between;
+
+//     background-color: $text-white;
+
+//     transition: transform $timing-function-main;
+
+//     @media screen and (max-width: 767px) {
+//         position: absolute;
+//         top: 0;
+//         left: -100vw;
+
+        
+//         padding: 48px 40px;
+//         height: 100vh;
+//         width: 100vw;
+//         min-height: 590px;
+
+//             &.is-open {
+//                 transform: translateX(100vw);
+//                 transition: transform $timing-function-main;
+//             }
+//     }
+    
+//     @media screen and (min-width: 768px) {
+//         position: static;
+
+//         flex-direction: row;
+//         align-items: center;
+
+//         width: 100%;
+//         height: 100%;
+//         margin-left: 90px;
+//     }
+
+// }
+
+// .header-contacts {
+
+//         display: flex;
+//         flex-direction: column-reverse;
+
+//     @media screen and (max-width: 767px) {
+//         margin-bottom: 64px;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         flex-direction: column;
+//         align-items: flex-start;
+
+//         margin-left: 30px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         display: flex;
+//         align-items: center;
+//         flex-direction: row;
+
+//         gap: 30px;
+//     }
+// }
+
+// .header-contacts__item {
+//     margin-bottom: 32px;
+
+//     display: flex;
+//     align-items: center;
+    
+//     color: $text-blue;
+//     font-weight: 500;
+//     font-size: 34px;
+//     line-height: 1.17;
+//     letter-spacing: 0.02em;
+//     white-space: nowrap;
+
+//     &:first-child {
+//         font-size: 24px;
+
+//         color: $text-main;
+
+//         margin-bottom: 0;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         &:first-child {
+//             margin-bottom: 10px;
+//         }
+//         margin-bottom: 0;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         margin-bottom: 0;
+//         &:first-child {
+//             margin-bottom: 0px;
+//         }
+//     }
+// }
+
+
+// .header-contacts__link {
+//     color: currentColor;
+
+
+    
+//         @media screen and (min-width: 768px) {
+//             color: $text-main;
+//             font-size: 14px;
+//             line-height: 1.14;
+
+
+//             transition: color $timing-function-main;
+    
+//             &:hover,
+//             &:focus {
+//                 color: $text-blue;
+    
+//                 transition: color $timing-function-main;
+//             }
+//         }
+
+//         @media screen and (min-width: 1200px) {
+//             font-size: 16px;
+//             padding-top: 32px;
+//             padding-bottom: 32px;
+
+//         }
+
+// }
+
+
+// .header-contacts__icon {
+
+//     @media screen and (max-width: 767px) {
+//             display: none;
+//         }
+    
+//     @media screen and (min-width: 768px) {
+//         margin-right: 8px;
+                    
+//         fill: currentColor;
+//     }
+    
+//     @media screen and (min-width: 1200px) {
+//         margin-right: 10px;
+//     }
+        
+// }
+
+// .header__btn-menu {
+//     display: inline-flex;
+
+//     background-color: transparent;
+//     padding: 0;
+//     margin: 0;
+//     border: none;
+
+//     color: $text-secondary;
+
+//     z-index: 102;
+
+//     &:hover,
+//     &:focus {
+//         fill: $text-blue;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         display: none;
+//     }
+
+//     & .header__icon-menu {
+//         display: none;
+//     }
+
+//     &.is-open .header__icon-menu {
+//         display: block;
+//     }
+
+//     &.is-open .header__icon-close {
+//         display: none;
+//     }
+// }
+

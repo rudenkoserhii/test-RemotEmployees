@@ -1,0 +1,25 @@
+//Utils
+@import './utils/vars';
+@import './utils/visually-hidden';
+
+//Base styles
+@import './base/normalize';
+@import './base/container';
+@import './base/reset';
+@import './base/common';
+
+//Components
+@import './components/logo';
+@import './components/navigation';
+@import './components/blur';
+@import './components/socials';
+
+//Layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/recommendation';
+@import './layouts/sell';
+@import './layouts/review';
+@import './layouts/article';
+@import './layouts/subscribe';
+@import './layouts/footer';
