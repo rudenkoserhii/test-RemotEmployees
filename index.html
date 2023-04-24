@@ -82,7 +82,12 @@
               />
               <button type="button" class="btn hero__btn">
                 <span class="hero__btn-span">Search</span>
-                <svg class="hero__icon-arrow" width="24" height="24">
+                <svg
+                  class="hero__icon-arrow"
+                  viewbox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
                   <use href="./assets/sprite.svg#icon_arrow-right"></use>
                 </svg>
               </button>
@@ -248,9 +253,9 @@
               role="group"
               id="property"
             >
-              <label class="recommendation__label btn" for="house">
+              <label class="recommendation__label btn house" for="house">
                 <svg
-                  class="recommendation__icon-radio"
+                  class="recommendation__icon-radio house"
                   viewbox="0 0 24 24"
                   width="24"
                   height="24"
@@ -260,34 +265,45 @@
                 <span>House</span>
               </label>
               <input
-                class="recommendation__input"
+                class="recommendation__input house"
                 type="radio"
                 id="house"
                 name="property"
                 value="house"
                 checked
               />
-              <label class="recommendation__label btn" for="villa">
-                <svg class="recommendation__icon-radio" width="24" height="24">
+              <label class="recommendation__label btn villa" for="villa">
+                <svg
+                  class="recommendation__icon-radio villa"
+                  width="24"
+                  height="24"
+                >
                   <use href="./assets/sprite.svg#icon_villa"></use>
                 </svg>
                 <span>Villa</span>
               </label>
               <input
-                class="recommendation__input"
+                class="recommendation__input villa"
                 type="radio"
                 id="villa"
                 name="property"
                 value="villa"
               />
-              <label class="recommendation__label btn" for="apartment">
-                <svg class="recommendation__icon-radio" width="24" height="24">
+              <label
+                class="recommendation__label btn apartment"
+                for="apartment"
+              >
+                <svg
+                  class="recommendation__icon-radio apartment"
+                  width="24"
+                  height="24"
+                >
                   <use href="./assets/sprite.svg#icon_apartment"></use>
                 </svg>
                 <span>Apartment</span>
               </label>
               <input
-                class="recommendation__input"
+                class="recommendation__input apartment"
                 type="radio"
                 id="apartment"
                 name="property"
@@ -295,7 +311,7 @@
               />
             </fieldset>
             <ul class="recommendation__btns">
-              <li class="recommendation__btn btn">
+              <li class="recommendation__btn btn end">
                 <svg
                   class="recommendation__icon-arrow--left"
                   width="28"
@@ -307,6 +323,7 @@
               <li class="recommendation__btn btn">
                 <svg
                   class="recommendation__icon-arrow--right"
+                  viewbox="0 0 24 24"
                   width="28"
                   height="28"
                 >
@@ -317,191 +334,207 @@
           </div>
           <ul class="recommendation__slides">
             <li class="recommendation__slide">
-              <img
-                class="recommendation__slide-img"
-                srcset="
-                  ./assets/images/recom_slider_01@2x.png 2x,
-                  ./assets/images/recom_slider_01@3x.png 3x
-                "
-                src="./assets/images/recom_slider_01.png"
-                alt="house picture"
-                width="340"
-                height="382"
-              />
-              <div class="recommendation__slide-label">
-                <svg
-                  class="recommendation__slide-label-icon"
-                  width="16"
-                  height="16"
-                >
-                  <use href="./assets/sprite.svg#icon_fire"></use>
-                </svg>
-                <p class="recommendation__slide-label-name">Popular</p>
-              </div>
-              <h3 class="recommendation__slide-title">Roselands House</h3>
-              <p class="recommendation__slide-price">
-                $ <span>35.000.000</span>
-              </p>
-              <div class="recommendation__slide-agent">
+              <a class="recommendation__slide-link" href="/recom/id">
                 <img
-                  class="recommendation__slide-agent-img"
+                  class="recommendation__slide-img"
                   srcset="
-                    ./assets/images/avatar_01@2x.png 2x,
-                    ./assets/images/avatar_01@3x.png 3x
+                    ./assets/images/recom_slider_01@2x.png 2x,
+                    ./assets/images/recom_slider_01@3x.png 3x
                   "
-                  src="./assets/images/avatar_01.png"
-                  alt="user avatar"
-                  width="40"
-                  height="40"
+                  src="./assets/images/recom_slider_01.png"
+                  alt="house picture"
+                  width="340"
+                  height="382"
                 />
-                <div class="recommendation__slide-agent-title">
-                  <p class="recommendation__slide-agent-name">Dianne Russell</p>
-                  <p class="recommendation__slide-agent-qualification">
-                    Manchester, Kentucky
+                <div class="recommendation__slide-label popular">
+                  <svg
+                    class="recommendation__slide-label-icon popular"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./assets/sprite.svg#icon_fire"></use>
+                  </svg>
+                  <p class="recommendation__slide-label-name popular">
+                    Popular
                   </p>
                 </div>
-              </div>
+                <h3 class="recommendation__slide-title">Roselands House</h3>
+                <p class="recommendation__slide-price">
+                  $ <span>35.000.000</span>
+                </p>
+                <div class="recommendation__slide-agent">
+                  <img
+                    class="recommendation__slide-agent-img"
+                    srcset="
+                      ./assets/images/avatar_01@2x.png 2x,
+                      ./assets/images/avatar_01@3x.png 3x
+                    "
+                    src="./assets/images/avatar_01.png"
+                    alt="user avatar"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="recommendation__slide-agent-title">
+                    <p class="recommendation__slide-agent-name">
+                      Dianne Russell
+                    </p>
+                    <p class="recommendation__slide-agent-qualification">
+                      Manchester, Kentucky
+                    </p>
+                  </div>
+                </div>
+              </a>
             </li>
             <li class="recommendation__slide">
-              <img
-                class="recommendation__slide-img"
-                srcset="
-                  ./assets/images/recom_slider_02@2x.png 2x,
-                  ./assets/images/recom_slider_02@3x.png 3x
-                "
-                src="./assets/images/recom_slider_02.png"
-                alt="house picture"
-                width="340"
-                height="382"
-              />
-              <div class="recommendation__slide-label">
-                <svg
-                  viewbox="0 0 24 24"
-                  class="recommendation__slide-label-icon"
-                  width="16"
-                  height="16"
-                >
-                  <use href="./assets/sprite.svg#icon_house"></use>
-                </svg>
-                <p class="recommendation__slide-label-name">New house</p>
-              </div>
-              <h3 class="recommendation__slide-title">Woodlandside</h3>
-              <p class="recommendation__slide-price">
-                $ <span>20.000.000</span>
-              </p>
-              <div class="recommendation__slide-agent">
+              <a class="recommendation__slide-link" href="/recom/id">
                 <img
-                  class="recommendation__slide-agent-img"
+                  class="recommendation__slide-img"
                   srcset="
-                    ./assets/images/avatar_11@2x.png 2x,
-                    ./assets/images/avatar_11@3x.png 3x
+                    ./assets/images/recom_slider_02@2x.png 2x,
+                    ./assets/images/recom_slider_02@3x.png 3x
                   "
-                  src="./assets/images/avatar_11.png"
-                  alt="user avatar"
-                  width="40"
-                  height="40"
+                  src="./assets/images/recom_slider_02.png"
+                  alt="house picture"
+                  width="340"
+                  height="382"
                 />
-                <div class="recommendation__slide-agent-title">
-                  <p class="recommendation__slide-agent-name">Robert Fox</p>
-                  <p class="recommendation__slide-agent-qualification">
-                    Dr. San Jose, South Dakota
-                  </p>
+                <div class="recommendation__slide-label new">
+                  <svg
+                    viewbox="0 0 24 24"
+                    class="recommendation__slide-label-icon new"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./assets/sprite.svg#icon_house"></use>
+                  </svg>
+                  <p class="recommendation__slide-label-name new">New house</p>
                 </div>
-              </div>
+                <h3 class="recommendation__slide-title">Woodlandside</h3>
+                <p class="recommendation__slide-price">
+                  $ <span>20.000.000</span>
+                </p>
+                <div class="recommendation__slide-agent">
+                  <img
+                    class="recommendation__slide-agent-img"
+                    srcset="
+                      ./assets/images/avatar_11@2x.png 2x,
+                      ./assets/images/avatar_11@3x.png 3x
+                    "
+                    src="./assets/images/avatar_11.png"
+                    alt="user avatar"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="recommendation__slide-agent-title">
+                    <p class="recommendation__slide-agent-name">Robert Fox</p>
+                    <p class="recommendation__slide-agent-qualification">
+                      Dr. San Jose, South Dakota
+                    </p>
+                  </div>
+                </div>
+              </a>
             </li>
             <li class="recommendation__slide">
-              <img
-                class="recommendation__slide-img"
-                srcset="
-                  ./assets/images/recom_slider_03@2x.png 2x,
-                  ./assets/images/recom_slider_03@3x.png 3x
-                "
-                src="./assets/images/recom_slider_03.png"
-                alt="house picture"
-                width="340"
-                height="382"
-              />
-              <div class="recommendation__slide-label">
-                <svg
-                  class="recommendation__slide-label-icon"
-                  width="16"
-                  height="16"
-                >
-                  <use href="./assets/sprite.svg#icon_wallet"></use>
-                </svg>
-                <p class="recommendation__slide-label-name">Best Deals</p>
-              </div>
-              <h3 class="recommendation__slide-title">The Old Lighthouse</h3>
-              <p class="recommendation__slide-price">
-                $ <span>44.000.000</span>
-              </p>
-              <div class="recommendation__slide-agent">
+              <a class="recommendation__slide-link" href="/recom/id">
                 <img
-                  class="recommendation__slide-agent-img"
+                  class="recommendation__slide-img"
                   srcset="
-                    ./assets/images/avatar_10@2x.png 2x,
-                    ./assets/images/avatar_10@3x.png 3x
+                    ./assets/images/recom_slider_03@2x.png 2x,
+                    ./assets/images/recom_slider_03@3x.png 3x
                   "
-                  src="./assets/images/avatar_10.png"
-                  alt="user avatar"
-                  width="40"
-                  height="40"
+                  src="./assets/images/recom_slider_03.png"
+                  alt="house picture"
+                  width="340"
+                  height="382"
                 />
-                <div class="recommendation__slide-agent-title">
-                  <p class="recommendation__slide-agent-name">
-                    Ronald Richards
-                  </p>
-                  <p class="recommendation__slide-agent-qualification">
-                    Santa Ana, Illinois
+                <div class="recommendation__slide-label best">
+                  <svg
+                    class="recommendation__slide-label-icon best"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./assets/sprite.svg#icon_wallet"></use>
+                  </svg>
+                  <p class="recommendation__slide-label-name best">
+                    Best Deals
                   </p>
                 </div>
-              </div>
+                <h3 class="recommendation__slide-title">The Old Lighthouse</h3>
+                <p class="recommendation__slide-price">
+                  $ <span>44.000.000</span>
+                </p>
+                <div class="recommendation__slide-agent">
+                  <img
+                    class="recommendation__slide-agent-img"
+                    srcset="
+                      ./assets/images/avatar_10@2x.png 2x,
+                      ./assets/images/avatar_10@3x.png 3x
+                    "
+                    src="./assets/images/avatar_10.png"
+                    alt="user avatar"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="recommendation__slide-agent-title">
+                    <p class="recommendation__slide-agent-name">
+                      Ronald Richards
+                    </p>
+                    <p class="recommendation__slide-agent-qualification">
+                      Santa Ana, Illinois
+                    </p>
+                  </div>
+                </div>
+              </a>
             </li>
             <li class="recommendation__slide">
-              <img
-                class="recommendation__slide-img"
-                srcset="
-                  ./assets/images/recom_slider_04@2x.png 2x,
-                  ./assets/images/recom_slider_04@3x.png 3x
-                "
-                src="./assets/images/recom_slider_04.png"
-                alt="house picture"
-                width="340"
-                height="382"
-              />
-              <div class="recommendation__slide-label">
-                <svg
-                  class="recommendation__slide-label-icon"
-                  width="16"
-                  height="16"
-                >
-                  <use href="./assets/sprite.svg#icon_fire"></use>
-                </svg>
-                <p class="recommendation__slide-label-name">Popular</p>
-              </div>
-              <h3 class="recommendation__slide-title">Cosmo's House</h3>
-              <p class="recommendation__slide-price">
-                $ <span>22.000.000</span>
-              </p>
-              <div class="recommendation__slide-agent">
+              <a class="recommendation__slide-link" href="/recom/id">
                 <img
-                  class="recommendation__slide-agent-img"
+                  class="recommendation__slide-img"
                   srcset="
-                    ./assets/images/avatar_09@2x.png 2x,
-                    ./assets/images/avatar_09@3x.png 3x
+                    ./assets/images/recom_slider_04@2x.png 2x,
+                    ./assets/images/recom_slider_04@3x.png 3x
                   "
-                  src="./assets/images/avatar_09.png"
-                  alt="user avatar"
-                  width="40"
-                  height="40"
+                  src="./assets/images/recom_slider_04.png"
+                  alt="house picture"
+                  width="340"
+                  height="382"
                 />
-                <div class="recommendation__slide-agent-title">
-                  <p class="recommendation__slide-agent-name">Jenny Wilson</p>
-                  <p class="recommendation__slide-agent-qualification">
-                    Preston Rd. Inglewood, Maine 98380
+                <div class="recommendation__slide-label popular">
+                  <svg
+                    class="recommendation__slide-label-icon popular"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./assets/sprite.svg#icon_fire"></use>
+                  </svg>
+                  <p class="recommendation__slide-label-name popular">
+                    Popular
                   </p>
                 </div>
-              </div>
+                <h3 class="recommendation__slide-title">Cosmo's House</h3>
+                <p class="recommendation__slide-price">
+                  $ <span>22.000.000</span>
+                </p>
+                <div class="recommendation__slide-agent">
+                  <img
+                    class="recommendation__slide-agent-img"
+                    srcset="
+                      ./assets/images/avatar_09@2x.png 2x,
+                      ./assets/images/avatar_09@3x.png 3x
+                    "
+                    src="./assets/images/avatar_09.png"
+                    alt="user avatar"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="recommendation__slide-agent-title">
+                    <p class="recommendation__slide-agent-name">Jenny Wilson</p>
+                    <p class="recommendation__slide-agent-qualification">
+                      Preston Rd. Inglewood, Maine 98380
+                    </p>
+                  </div>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -512,10 +545,8 @@
           <div class="sell__blur blur"></div>
           <div class="sell__left-side">
             <div class="sell__title-container">
-              <p class="recommendation__section-name section-name">
-                Ready to Sell!
-              </p>
-              <h2 class="recommendation__title section-title">
+              <p class="sell__section-name section-name">Ready to Sell!</p>
+              <h2 class="sell__title section-title">
                 Let’s tour and see our house!
               </h2>
             </div>
@@ -559,7 +590,7 @@
               </div>
             </ul>
             <div class="sell__agent">
-              <div class="sell_agent-box">
+              <div class="sell__agent-box">
                 <img
                   class="sell__agent-img"
                   srcset="
@@ -573,10 +604,10 @@
                 />
                 <div class="sell__agent-title">
                   <p class="sell__agent-name">Dianne Russell</p>
-                  <p class="sell__agent-qualification">Manchester, Kentucky</p>
+                  <p class="sell__agent-qualification">Manager Director</p>
                 </div>
               </div>
-              <button class="btn sell_btn">
+              <button class="btn sell__btn">
                 <svg class="sell__btn-icon" width="24" height="24">
                   <use href="./assets/sprite.svg#icon_call"></use>
                 </svg>
@@ -588,7 +619,7 @@
             <ul class="sell__slides">
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img"
+                  class="sell__slide-img first"
                   srcset="
                     ./assets/images/sell_slider_01@2x.png 2x,
                     ./assets/images/sell_slider_01@3x.png 3x
@@ -601,7 +632,7 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img"
+                  class="sell__slide-img second"
                   srcset="
                     ./assets/images/sell_slider_02@2x.png 2x,
                     ./assets/images/sell_slider_02@3x.png 3x
@@ -614,7 +645,7 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img"
+                  class="sell__slide-img third"
                   srcset="
                     ./assets/images/sell_slider_03@2x.png 2x,
                     ./assets/images/sell_slider_03@3x.png 3x
@@ -627,7 +658,7 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img"
+                  class="sell__slide-img fourth"
                   srcset="
                     ./assets/images/sell_slider_04@2x.png 2x,
                     ./assets/images/sell_slider_04@3x.png 3x
@@ -673,7 +704,7 @@
                   also do not get a discount from the sale of my house. Awesome!
                 </p>
                 <div class="review__slide-agent">
-                  <div class="review__slide-agent-box">
+                  <div class="review__slide-agent-box left">
                     <img
                       class="review__slide-agent-img"
                       srcset="
@@ -692,7 +723,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="review__slide-agent-box">
+                  <div class="review__slide-agent-box right">
                     <svg
                       class="review__slide-agent-icon"
                       width="28"
@@ -814,6 +845,11 @@
                 </div>
               </div>
             </li>
+          </ul>
+          <ul class="review__dots">
+            <li class="review__dot"><a class="review__dot-link" href="#prev"></a></li>
+            <li class="review__dot active"></li>
+            <li class="review__dot"><a class="review__dot-link" href="#next"></a></li>
           </ul>
         </div>
       </section>

@@ -11,7 +11,11 @@ $blur-8: #B9FF82;
 //background color
 $background-main: #ffffff;
 $background-btn: #10B981;
-
+$background-red: #FEE2E2;
+$background-light-blue: #DBEAFE;
+$background-light-green: #D1FAE5;
+$background-gray: #E0E3EB;
+$background-line: #F0F3FD;
 
 
 
@@ -25,7 +29,9 @@ $text-black: #000000;
 $text-gray: #888B97;
 $text-grey: #626687;
 $text-footer: #0E1735;
-
+$text-red: #EF4444;
+$text-blue: #1D4ED8;
+$text-green: #047857;
 
 // filters
 $filter-avatar: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
@@ -36,13 +42,20 @@ $shadow-first: 0px 9px 32px rgba(89, 92, 219, 0.05);
 // icon-color
 $icon-social: #3C4563;
 $icon-accent: #1B1C57;
+$icon-green: #10B981;
+$icon-gray: #888B97;
+$icon-blue: #1D4ED8;
+$icon-green2: #047857;
+$icon-white: #ffffff;
 
+
+// borders
+$border-btn-gray: 1px solid #E0E3EB;
 
 
 $text-placeholder: rgba(117, 117, 117, 0.5);
 $text-footer1: #626687;
 $text-footer2: rgba(255, 255, 255, 0.6);
-$text-blue: rgba(255, 255, 255, 0.6);
 $background-secondary: #3C4563;
 $background-footer: #2f303a;
 $background-about: rgba(47, 48, 58, 0.8);

@@ -22,19 +22,19 @@ z-index: -1;
 
   &.recommendation__blur {
     background-color: $blur-3;
-    left: 612px;
-    top: 920px;
+    top: 612px;
+    left: 920px;
   }
 
-  & .sell__blur {
+  &.sell__blur {
     background-color: $blur-4;
-    left: -48px;
-    top: 979px;
+    top: -48px;
+    left: 979px;
   }
 
   &.review__blur {
     background-color: $blur-5;
-    left: 228px;
+    left: -290px;
     top: 729px;
   }
 
@@ -52,8 +52,8 @@ z-index: -1;
 
   &.footer__blur {
     background-color: $blur-8;
-    left: -22px;
-    top: 780px;
+    top: -22px;
+    left: 780px;
   }
 
 }

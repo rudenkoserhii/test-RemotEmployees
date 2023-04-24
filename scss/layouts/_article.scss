@@ -5,8 +5,10 @@ content: '';
 position: absolute;
 width: 32px;
 height: 1px;
-left: 121px;
+left: 50%;
 top: -8px;
+
+transform: translateX(-50%);
 
 background: $text-orange;
 }
