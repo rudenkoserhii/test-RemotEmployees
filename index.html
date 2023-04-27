@@ -25,7 +25,6 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <div class="header__blur blur"></div>
         <a class="logo" href="/home">
           <svg class="logo__icon" width="36" height="36">
             <use href="./assets/sprite.svg#icon_logo"></use>
@@ -67,6 +66,7 @@
       <!-----Hero----->
       <section class="hero">
         <div class="container hero__container">
+          <div class="header__blur blur"></div>
           <div class="hero__blur blur"></div>
           <div class="hero__left">
             <h1 class="hero__title">
@@ -296,6 +296,13 @@
               role="group"
               id="property"
             >
+              <input
+                class="recommendation__input house"
+                type="radio"
+                id="house"
+                name="property"
+                value="house"
+              />
               <label class="recommendation__label btn house" for="house">
                 <svg
                   class="recommendation__icon-radio house"
@@ -305,15 +312,14 @@
                 >
                   <use href="./assets/sprite.svg#icon_house"></use>
                 </svg>
-                <span>House</span>
+                <span class="recommendation__span house">House</span>
               </label>
               <input
-                class="recommendation__input house"
+                class="recommendation__input villa"
                 type="radio"
-                id="house"
+                id="villa"
                 name="property"
-                value="house"
-                checked
+                value="villa"
               />
               <label class="recommendation__label btn villa" for="villa">
                 <svg
@@ -323,14 +329,14 @@
                 >
                   <use href="./assets/sprite.svg#icon_villa"></use>
                 </svg>
-                <span>Villa</span>
+                <span class="recommendation__span villa">Villa</span>
               </label>
               <input
-                class="recommendation__input villa"
+                class="recommendation__input apartment"
                 type="radio"
-                id="villa"
+                id="apartment"
                 name="property"
-                value="villa"
+                value="apartment"
               />
               <label
                 class="recommendation__label btn apartment"
@@ -343,15 +349,8 @@
                 >
                   <use href="./assets/sprite.svg#icon_apartment"></use>
                 </svg>
-                <span>Apartment</span>
+                <span class="recommendation__span apartment">Apartment</span>
               </label>
-              <input
-                class="recommendation__input apartment"
-                type="radio"
-                id="apartment"
-                name="property"
-                value="apartment"
-              />
             </fieldset>
             <ul class="recommendation__btns">
               <li class="recommendation__btn btn end left">
@@ -1068,7 +1067,7 @@
             <ul class="sell__slides">
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img first"
+                  class="sell__slide-img first" id="_01"
                   srcset="
                     ./assets/images/sell_slider_01@2x.png 2x,
                     ./assets/images/sell_slider_01@3x.png 3x
@@ -1081,7 +1080,7 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img second"
+                  class="sell__slide-img second" id="_02"
                   srcset="
                     ./assets/images/sell_slider_02@2x.png 2x,
                     ./assets/images/sell_slider_02@3x.png 3x
@@ -1094,7 +1093,7 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img third"
+                  class="sell__slide-img third" id="_03"
                   srcset="
                     ./assets/images/sell_slider_03@2x.png 2x,
                     ./assets/images/sell_slider_03@3x.png 3x
@@ -1107,7 +1106,7 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img fourth"
+                  class="sell__slide-img fourth" id="_04"
                   srcset="
                     ./assets/images/sell_slider_04@2x.png 2x,
                     ./assets/images/sell_slider_04@3x.png 3x
@@ -1125,7 +1124,15 @@
                   data-modal-close
                   class="modal__btn-close"
                   type="submit"
-                ></button>
+                >
+                <svg
+                  class="close__icon"
+                  width="11"
+                  height="11"
+                >
+                  <use href="./assets/sprite.svg#icon_close"></use>
+                </svg>
+                </button>
               </div>
             </div>
           </div>
