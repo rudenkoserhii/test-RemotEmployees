@@ -25,15 +25,15 @@ padding-top: 568px;
 
 border-top-right-radius: 5px;
 
-background-image: url("../../assets/images/hero.png");
+// background-image: url("../../assets/images/hero.png");
 // background-image: -webkit-image-set(
 //         url("../../assets/images/hero.png") 1x type("image/png"),
 //         url("../../assets/images/hero@2x.png") 2x type("image/png"),
 //         url("../../assets/images/hero@3x.png") 3x type("image/png"));
-// background-image: image-set(
-//         url("../../assets/images/hero.png") 1x,
-//         url("../../assets/images/hero@2x.png") 2x,
-//         url("../../assets/images/hero@3x.png") 3x);
+background-image: image-set(
+        url("/assets/images/hero.png") 1x,
+        url("/assets/images/hero@2x.png") 2x,
+        url("/assets/images/hero@3x.png") 3x);
 background-repeat: no-repeat;
 background-position: top left;
 background-size: 720px, 720px;
