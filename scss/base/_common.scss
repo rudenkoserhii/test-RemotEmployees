@@ -5,6 +5,8 @@ body {
   font-style: normal;
 
   position: relative;
+
+transition: all 500ms ease-out;
 }
 
 img {
@@ -52,6 +54,8 @@ display: block;
 
   max-width: fit-content;
 
+white-space: nowrap;
+
   background: $background-btn;
   border-radius: 32px;
   border: none;
@@ -72,6 +76,6 @@ display: block;
 
   &:hover,
   &:focus {
-    scale: 1.05;
-  }
+outline: 1px solid $icon-accent;
+}
 }

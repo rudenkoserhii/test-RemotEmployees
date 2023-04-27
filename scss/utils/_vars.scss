@@ -16,6 +16,7 @@ $background-light-blue: #DBEAFE;
 $background-light-green: #D1FAE5;
 $background-gray: #E0E3EB;
 $background-line: #F0F3FD;
+$background-nav: rgba(255, 255, 255, 0.1);
 
 
 
@@ -32,12 +33,15 @@ $text-footer: #0E1735;
 $text-red: #EF4444;
 $text-blue: #1D4ED8;
 $text-green: #047857;
+$text-light-blue: #68799F;
+$text-nav: #F0F3FD;
 
 // filters
 $filter-avatar: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
 
 // shadows
 $shadow-first: 0px 9px 32px rgba(89, 92, 219, 0.05);
+$shadow-second: 0px 11px 48px rgba(51, 51, 51, 0.06);
 
 // icon-color
 $icon-social: #3C4563;
@@ -51,6 +55,8 @@ $icon-white: #ffffff;
 
 // borders
 $border-btn-gray: 1px solid #E0E3EB;
+$border-title: 1px #1B1C57;
+$border-nav: 1px solid rgba(255, 255, 255, 0.3);
 
 
 $text-placeholder: rgba(117, 117, 117, 0.5);

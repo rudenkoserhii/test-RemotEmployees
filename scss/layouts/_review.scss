@@ -84,7 +84,8 @@ display: flex;
 align-items: flex-end;
 justify-content: space-between;
 
-gap: auto;
+width: 548px;
+
 }
 
 .review__slide-agent-box {
@@ -92,10 +93,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+
 &.left {
 gap: 24px;
-
-margin-right: auto;
 }
 
 &.right {

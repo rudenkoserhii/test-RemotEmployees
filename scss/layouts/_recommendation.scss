@@ -78,15 +78,17 @@
   gap: 16px;
 
 
-& > .btn.end {
+x
+& > .btn > svg {
+fill: $icon-white;
+}
+}
+
+.recommendation__btn.btn.end {
 background: $background-gray;
 
 & > svg {
 fill: $icon-social;
-}
-}
-& > .btn > svg {
-fill: $icon-white;
 }
 }
 
