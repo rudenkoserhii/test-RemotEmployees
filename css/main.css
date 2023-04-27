@@ -281,19 +281,14 @@ summary {
   margin: 0px auto 120px auto;
   position: relative;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 1920px;
   }
 }
 
@@ -1550,6 +1545,12 @@ x .recommendation__btns > .btn > svg {
   margin: 0px auto 40px auto;
 }
 
+.review__slides-container {
+  position: relative;
+  width: 100%;
+  height: 505px;
+}
+
 .review__slides {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1561,6 +1562,13 @@ x .recommendation__btns > .btn > svg {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 56px;
+  width: 233.333333333%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .review__slide {
@@ -1724,22 +1732,24 @@ x .recommendation__btns > .btn > svg {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 16px;
-  margin: 137px auto 0px auto;
+  margin: 32px auto 0px auto;
 }
 
-.review__dot.active {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #3C4563;
-}
-
-.review__dot-link {
+.review__dot-button {
+  cursor: pointer;
+  pointer-events: auto;
   display: block;
   width: 8px;
   height: 8px;
+  padding: 0;
+  border: none;
+  outline: none;
   border-radius: 50%;
   background: #E0E3EB;
+}
+.review__dot-button.active {
+  background: #3C4563;
+  pointer-events: none;
 }
 
 .article__section-name {
@@ -1922,7 +1932,8 @@ x .recommendation__btns > .btn > svg {
 .subscribe__container {
   background: -webkit-gradient(linear, left top, right top, from(#ACC6F7), color-stop(3.38%), color-stop(6.76%, #BACCF4), color-stop(9.64%), color-stop(12.53%, #C5D2F3), color-stop(16.83%), color-stop(21.12%, #D0D8F3), color-stop(21.97%), color-stop(22.81%, #D3DBF4), color-stop(23.52%), color-stop(24.22%, #D3DBF4), color-stop(27.18%), color-stop(30.14%, #DBE0F4), color-stop(32.32%), color-stop(34.5%, #E2E6F4), color-stop(37.95%), color-stop(41.4%, #EBF0F6), color-stop(41.9%), color-stop(42.39%, #EBF1F7), color-stop(44.36%), color-stop(46.33%, #EFF7F8), color-stop(52.32%), color-stop(58.3%, #F2FDF9), color-stop(66.54%), color-stop(74.78%, #F2FBF8), color-stop(83.59%), color-stop(92.39%, #EFF2FA), color-stop(96.19%), to(#E8EAF8));
   background: linear-gradient(to right, #ACC6F7 0%, 3.38%, #BACCF4 6.76%, 9.64%, #C5D2F3 12.53%, 16.83%, #D0D8F3 21.12%, 21.97%, #D3DBF4 22.81%, 23.52%, #D3DBF4 24.22%, 27.18%, #DBE0F4 30.14%, 32.32%, #E2E6F4 34.5%, 37.95%, #EBF0F6 41.4%, 41.9%, #EBF1F7 42.39%, 44.36%, #EFF7F8 46.33%, 52.32%, #F2FDF9 58.3%, 66.54%, #F2FBF8 74.78%, 83.59%, #EFF2FA 92.39%, 96.19%, #E8EAF8 100%);
-  width: 1200px;
+  min-width: 1200px;
+  max-width: 1920px;
   height: 312px;
   border-radius: 32px;
   padding-top: 65px;

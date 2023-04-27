@@ -1,7 +1,8 @@
 .subscribe__container {
 background: linear-gradient(to right, #ACC6F7 0%, 3.38%, #BACCF4 6.76%, 9.64%, #C5D2F3 12.53%, 16.83%, #D0D8F3 21.12%, 21.97%, #D3DBF4 22.81%, 23.52%, #D3DBF4 24.22%, 27.18%, #DBE0F4 30.14%, 32.32%, #E2E6F4 34.50%, 37.95%, #EBF0F6 41.40%, 41.90%, #EBF1F7 42.39%, 44.36%, #EFF7F8 46.33%, 52.32%, #F2FDF9 58.30%, 66.54%, #F2FBF8 74.78%, 83.59%, #EFF2FA 92.39%, 96.19%, #E8EAF8 100%);
 
-width: 1200px;
+min-width: 1200px;
+max-width: 1920px;
 height: 312px;
 
 border-radius: 32px;

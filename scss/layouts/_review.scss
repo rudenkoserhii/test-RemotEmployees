@@ -1,120 +1,138 @@
-.review__section-name{
-margin: 9px auto 12px auto;
-&::before {
-content: '';
-position: absolute;
-width: 32px;
-height: 1px;
-left: 50%;
-top: -8px;
+// .review__container {
+// display: flex;
+// align-items: center;
+// justify-content: center;
 
-transform: translateX(-50%);
+// }
 
-background: $text-orange;
-}
+.review__section-name {
+  margin: 9px auto 12px auto;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 1px;
+    left: 50%;
+    top: -8px;
+
+    transform: translateX(-50%);
+
+    background: $text-orange;
+  }
 }
 
 .review__title {
-margin: 0px auto 40px auto;
+  margin: 0px auto 40px auto;
+}
+
+.review__slides-container {
+  position: relative;
+
+  width: 100%;
+  height: 505px;
 }
 
 .review__slides {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+
+  width: 233.333333333%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .review__slide {
-position: relative;
+  position: relative;
 }
 
 .review__slide-label {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
 
-position: absolute;
-width: 612px;
-height: 249px;
-left: 64px;
-top: 256px;
+  position: absolute;
+  width: 612px;
+  height: 249px;
+  left: 64px;
+  top: 256px;
 
-background: $background-main;
+  background: $background-main;
 
-box-shadow: $shadow-first;
-border-radius: 16px;
+  box-shadow: $shadow-first;
+  border-radius: 16px;
 }
 
 .review__slide-title {
-font-weight: 600;
-font-size: 20px;
-line-height: 1.25;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
 
-text-transform: capitalize;
+  text-transform: capitalize;
 
-color: $text-main;
+  color: $text-main;
 
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .review__slide-text {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 
-color: $text-grey;
+  color: $text-grey;
 
-opacity: 0.75;
+  opacity: 0.75;
 
-// flex: none;
-// order: 1;
-// flex-grow: 0;
+  // flex: none;
+  // order: 1;
+  // flex-grow: 0;
 
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .review__slide-agent {
-display: flex;
-align-items: flex-end;
-justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 
-width: 548px;
-
+  width: 548px;
 }
 
 .review__slide-agent-box {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  &.left {
+    gap: 24px;
+  }
 
-&.left {
-gap: 24px;
-}
-
-&.right {
-gap: 16px;
-}
+  &.right {
+    gap: 16px;
+  }
 }
 
 .review__slide-agent-rate {
-font-weight: 600;
-font-size: 20px;
-line-height: 1.4x;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4x;
 
-color: $text-secondary;
+  color: $text-secondary;
 
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
-
 
 .review__slide-agent-title {
   display: flex;
@@ -125,29 +143,29 @@ flex-grow: 0;
 }
 
 .review__slide-agent-qualification {
- font-weight: 500;
-font-size: 14px;
-line-height: 1.57;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
 
-color: $text-gray;
+  color: $text-gray;
 
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .review__slide-agent-name {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.57;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
 
-color: $text-main;
+  color: $text-main;
 
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .review__dots {
@@ -156,26 +174,27 @@ flex-grow: 0;
   justify-content: center;
   gap: 16px;
 
-margin: 137px auto 0px auto;
+  margin: 32px auto 0px auto;
 }
 
-.review__dot.active {
-width: 8px;
-height: 8px;
+.review__dot-button {
+cursor: pointer;
+pointer-events: auto;
+  display: block;
 
-border-radius: 50%;
+  width: 8px;
+  height: 8px;
 
+padding: 0;
 
-background: $text-secondary;
+border: none;
+outline: none;
+
+  border-radius: 50%;
+
+  background: $background-gray;
+&.active {
+  background: $text-secondary;
+pointer-events: none;
 }
-
-.review__dot-link {
-display: block;
-
-width: 8px;
-height: 8px;
-
-border-radius: 50%;
-
-background: $background-gray;
 }

@@ -174,8 +174,6 @@ function checkEnd(min, max, liRecom) {
   });
 }
 
-//-Review--------------------------------------//
-
 //-Sell----------------------------------------//
 
 function sellSlyder() {
@@ -246,3 +244,128 @@ const modal = document.querySelector("[data-modal]");
     }
   }
 })();
+
+//-Review--------------------------------------//
+
+const reviewBtns = document.querySelectorAll(".review__dot-button");
+
+const slidesContainer = document.querySelector(".review__slides-container");
+const reviewUl = document.querySelector(".review__slides");
+
+let pressed = false;
+let startX;
+let x;
+
+slidesContainer.addEventListener("mousedown", (e) => {
+  pressed = true;
+  startX = e.offsetX - reviewUl.offsetLeft;
+  slidesContainer.style.cursor = "grabbing";
+});
+
+slidesContainer.addEventListener("mouseenter", () => {
+  slidesContainer.style.cursor = "grab";
+});
+
+slidesContainer.addEventListener("mouseleave", () => {
+  slidesContainer.style.cursor = "default";
+});
+
+slidesContainer.addEventListener("mouseup", () => {
+  slidesContainer.style.cursor = "grab";
+  pressed = false;
+});
+
+slidesContainer.addEventListener("mousemove", (e) => {
+  if (!pressed) return;
+  e.preventDefault();
+
+  x = e.offsetX;
+
+  reviewUl.style.left = `${x - startX}px`;
+
+  checkBoundary();
+});
+
+function checkBoundary() {
+  let outer = slidesContainer.getBoundingClientRect();
+  let inner = reviewUl.getBoundingClientRect();
+
+  if (parseInt(reviewUl.style.left) > inner.width * 0.5) {
+    reviewUl.style.left = `${inner.width * 0.5}px`;
+  }
+
+  if (inner.right < outer.right) {
+    reviewUl.style.left = `-${inner.width * 0.5 - outer.width}px`;
+  }
+
+  switch (true) {
+    case Number(reviewUl.style.left.split("px")[0]) >
+      inner.width * 0.5 - outer.width / 3:
+      reviewBtns.forEach((btn) =>
+        btn.id != 1
+          ? btn.classList.remove("active")
+          : btn.classList.add("active")
+      );
+      break;
+    case Number(reviewUl.style.left.split("px")[0]) <=
+      inner.width * 0.5 - outer.width / 3 &&
+      Number(reviewUl.style.left.split("px")[0]) >=
+        outer.width * 1.3 - inner.width * 0.5:
+      reviewBtns.forEach((btn) =>
+        btn.id != 2
+          ? btn.classList.remove("active")
+          : btn.classList.add("active")
+      );
+      break;
+    case Number(reviewUl.style.left.split("px")[0]) <
+      outer.width * 1.3 - inner.width * 0.5:
+      reviewBtns.forEach((btn) =>
+        btn.id != 3
+          ? btn.classList.remove("active")
+          : btn.classList.add("active")
+      );
+      break;
+  }
+}
+
+reviewBtns.forEach((btn, index) =>
+  btn.addEventListener("click", (e) => onDotClick(btn, index))
+);
+
+function onDotClick(btn, index) {
+  let outer = slidesContainer.getBoundingClientRect();
+  let inner = reviewUl.getBoundingClientRect();
+
+  switch (index) {
+    case 0:
+      reviewUl.style.left = `${inner.width * 0.5}px`;
+      btn.classList.add("active");
+      reviewBtns.forEach((el) => {
+        if (el.id != index + 1) {
+          el.classList.remove("active");
+        }
+      });
+
+      break;
+    case 1:
+      reviewUl.style.left = `${outer.width * 0.5}px`;
+      btn.classList.add("active");
+      reviewBtns.forEach((el) => {
+        if (el.id != index + 1) {
+          el.classList.remove("active");
+        }
+      });
+      break;
+    case 2:
+      reviewUl.style.left = `-${inner.width * 0.5 - outer.width}px`;
+      btn.classList.add("active");
+      reviewBtns.forEach((el) => {
+        if (el.id != index + 1) {
+          el.classList.remove("active");
+        }
+      });
+      break;
+    default:
+      reviewUl.style.left = `${outer.width}px`;
+  }
+}
