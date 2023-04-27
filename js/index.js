@@ -29,8 +29,8 @@ setInterval(heroSlyder, 3000);
 //---------------------------------------------//
 
 const btns = document.querySelectorAll(".recommendation__btn");
-  const liRecom = document.querySelectorAll(".recommendation__slide");
-  const ulRecom = document.querySelector(".recommendation__slides");
+const liRecom = document.querySelectorAll(".recommendation__slide");
+const ulRecom = document.querySelector(".recommendation__slides");
 
 btns.forEach((btn) => btn.addEventListener("click", move));
 
@@ -42,79 +42,59 @@ const vw = Math.max(
 let min = 0;
 let max = Math.floor(vw / 380);
 
-checkEnd(min, max, liRecom)
+checkEnd(min, max, liRecom);
+recomSlyder(min, max);
 
-function recomSlyder() {}
-
-function move(e) {
-//   checkEnd();
-
-
+function recomSlyder(min, max) {
   const array = [...liRecom];
-console.log(e.target)
-  if (e.target.classList.contains("left") && min !== 0) {
-min -= 1;
-max -+ 1;
-  } else if (e.target.classList.contains("right") && max < liRecom.length) {
-min += 1;
-max += 1;
+  const insert = array.slice(min, max);
+  ulRecom.innerHTML = insert.map((e) => e.outerHTML).join("");
 }
 
-  array.unshift(array[array.length - 1]);
-  array.pop();
+function move(e) {
+  if (e.currentTarget.classList.contains("left") && min !== 0) {
+    min -= 1;
+    max -= 1;
 
-  ulRecom.innerHTML = array.map((e) => e.outerHTML).join("");
+    checkEnd(min, max, liRecom);
+    recomSlyder(min, max);
+  } else if (
+    e.currentTarget.classList.contains("right") &&
+    max < liRecom.length
+  ) {
+    min += 1;
+    max += 1;
+
+    checkEnd(min, max, liRecom);
+    recomSlyder(min, max);
+  }
 }
 
 function checkEnd(min, max, liRecom) {
-console.log(min)
-console.log(max)
-console.log(liRecom.length)
-// console.log(min)
-
-  if (max === liRecom.length) {
-console.log('max')
-    btns.forEach((btn) => {
-console.log(btn.classList)
+  btns.forEach((btn) => {
+    if (max === liRecom.length) {
       if (btn.classList.contains("right")) {
-console.log('right')
         btn.classList.add("end");
-        btn.style.pointerEvents = 'none';
-console.log(btn.classList)
-
+        btn.style.pointerEvents = "none";
       }
-//  else {
-//         btn.classList.remove("end");
-//         btn.style.pointerEvents = 'auto';
-// }
-    });
-  }
-
-
-if (min === 0) {
-console.log('min')
-
-    btns.forEach((btn) => {
+    } else {
+      if (btn.classList.contains("right")) {
+        btn.classList.remove("end");
+        btn.style.pointerEvents = "auto";
+      }
+    }
+    if (min === 0) {
       if (btn.classList.contains("left")) {
-console.log('left')
-
         btn.classList.add("end");
-        btn.style.pointerEvents = 'none';
-console.log(btn.classList)
-      } 
-// else {
-//         btn.classList.remove("end");
-//         btn.style.pointerEvents = 'auto';
-// }
-    });
-  } 
-
-//  {
-//     btns.forEach((btn) => {
-//       btn.classList.remove("end");
-//         btn.style.pointerEvents = 'auto';
-//     });
-//   }
+        btn.style.pointerEvents = "none";
+      }
+    } else {
+      if (btn.classList.contains("left")) {
+        btn.classList.remove("end");
+        btn.style.pointerEvents = "auto";
+      }
+    }
+  });
 }
 
 //---------------------------------------------//
