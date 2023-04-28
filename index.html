@@ -90,27 +90,29 @@
               Everything you need about finding your place to live will be here,
               where it will be easier for you
             </p>
-            <label class="hero__label" for="hero__search">
-              <svg class="hero__icon-location" width="24" height="24">
-                <use href="./assets/sprite.svg#icon_location"></use>
-              </svg>
-              <input
-                class="hero__input"
-                id="hero__search"
-                placeholder="Search for the location you want!"
-              />
-              <button type="button" class="btn hero__btn">
-                <span class="hero__btn-span">Search</span>
-                <svg
-                  class="hero__icon-arrow"
-                  viewbox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./assets/sprite.svg#icon_arrow-right"></use>
+            <form class="hero__form" autocomplete="off">
+              <label class="hero__label" for="hero__search">
+                <svg class="hero__icon-location" width="24" height="24">
+                  <use href="./assets/sprite.svg#icon_location"></use>
                 </svg>
-              </button>
-            </label>
+                <input
+                  class="hero__input"
+                  id="hero__search"
+                  placeholder="Search for the location you want!"
+                />
+                <button type="submit" class="btn hero__btn">
+                  <span class="hero__btn-span">Search</span>
+                  <svg
+                    class="hero__icon-arrow"
+                    viewbox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./assets/sprite.svg#icon_arrow-right"></use>
+                  </svg>
+                </button>
+              </label>
+            </form>
             <p class="partners__paragraph">Our Partnership</p>
             <ul class="partners__list">
               <li class="partners__item">
@@ -1067,7 +1069,8 @@
             <ul class="sell__slides">
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img first" id="_01"
+                  class="sell__slide-img first"
+                  id="_01"
                   srcset="
                     ./assets/images/sell_slider_01@2x.png 2x,
                     ./assets/images/sell_slider_01@3x.png 3x
@@ -1080,7 +1083,8 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img second" id="_02"
+                  class="sell__slide-img second"
+                  id="_02"
                   srcset="
                     ./assets/images/sell_slider_02@2x.png 2x,
                     ./assets/images/sell_slider_02@3x.png 3x
@@ -1093,7 +1097,8 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img third" id="_03"
+                  class="sell__slide-img third"
+                  id="_03"
                   srcset="
                     ./assets/images/sell_slider_03@2x.png 2x,
                     ./assets/images/sell_slider_03@3x.png 3x
@@ -1106,7 +1111,8 @@
               </li>
               <li class="sell__slide">
                 <img
-                  class="sell__slide-img fourth" id="_04"
+                  class="sell__slide-img fourth"
+                  id="_04"
                   srcset="
                     ./assets/images/sell_slider_04@2x.png 2x,
                     ./assets/images/sell_slider_04@3x.png 3x
@@ -1120,18 +1126,13 @@
             </ul>
             <div data-modal-window class="backdrop is-hidden">
               <div class="modal">
-                <button
-                  data-modal-close
-                  class="modal__btn-close"
-                  type="button"
-                >
-                <svg
-                  class="modal__close-icon"
-                  width="11"
-                  height="11"
-                >
-                  <use class="modal__close-icon-use" href="./assets/sprite.svg#icon_close"></use>
-                </svg>
+                <button data-modal-close class="modal__btn-close" type="button">
+                  <svg class="modal__close-icon" width="11" height="11">
+                    <use
+                      class="modal__close-icon-use"
+                      href="./assets/sprite.svg#icon_close"
+                    ></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -1148,178 +1149,179 @@
               What Our User Say About Us
             </h2>
           </div>
-<div class="review__slides-container">
-          <ul class="review__slides">
-            <li class="review__slide">
-              <img
-                class="review__slide-img"
-                srcset="
-                  ./assets/images/review_slider_01@2x.png 2x,
-                  ./assets/images/review_slider_01@3x.png 3x
-                "
-                src="./assets/images/review_slider_01.png"
-                alt="house picture"
-                width="740"
-                height="400"
-              />
-              <div class="review__slide-label">
-                <h3 class="review__slide-title">My house sold out fast!</h3>
-                <p class="review__slide-text">
-                  I was finally able to sell my house quickly through Hounter by
-                  immediately setting me up with people who wanted my house. I
-                  also do not get a discount from the sale of my house. Awesome!
-                </p>
-                <div class="review__slide-agent">
-                  <div class="review__slide-agent-box left">
-                    <img
-                      class="review__slide-agent-img"
-                      srcset="
-                        ./assets/images/avatar_12@2x.png 2x,
-                        ./assets/images/avatar_12@3x.png 3x
-                      "
-                      src="./assets/images/avatar_12.png"
-                      alt="user avatar"
-                      width="40"
-                      height="40"
-                    />
-                    <div class="review__slide-agent-title">
-                      <p class="review__slide-agent-name">Courtney Henry</p>
-                      <p class="review__slide-agent-qualification">
-                        CEO Andarafish
-                      </p>
+          <div class="review__slides-container">
+            <ul class="review__slides">
+              <li class="review__slide">
+                <img
+                  class="review__slide-img"
+                  srcset="
+                    ./assets/images/review_slider_01@2x.png 2x,
+                    ./assets/images/review_slider_01@3x.png 3x
+                  "
+                  src="./assets/images/review_slider_01.png"
+                  alt="house picture"
+                  width="740"
+                  height="400"
+                />
+                <div class="review__slide-label">
+                  <h3 class="review__slide-title">My house sold out fast!</h3>
+                  <p class="review__slide-text">
+                    I was finally able to sell my house quickly through Hounter
+                    by immediately setting me up with people who wanted my
+                    house. I also do not get a discount from the sale of my
+                    house. Awesome!
+                  </p>
+                  <div class="review__slide-agent">
+                    <div class="review__slide-agent-box left">
+                      <img
+                        class="review__slide-agent-img"
+                        srcset="
+                          ./assets/images/avatar_12@2x.png 2x,
+                          ./assets/images/avatar_12@3x.png 3x
+                        "
+                        src="./assets/images/avatar_12.png"
+                        alt="user avatar"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="review__slide-agent-title">
+                        <p class="review__slide-agent-name">Courtney Henry</p>
+                        <p class="review__slide-agent-qualification">
+                          CEO Andarafish
+                        </p>
+                      </div>
+                    </div>
+                    <div class="review__slide-agent-box right">
+                      <svg
+                        class="review__slide-agent-icon"
+                        width="28"
+                        height="28"
+                      >
+                        <use href="./assets/sprite.svg#icon_star"></use>
+                      </svg>
+                      <p class="review__slide-agent-rate">4.3</p>
                     </div>
                   </div>
-                  <div class="review__slide-agent-box right">
-                    <svg
-                      class="review__slide-agent-icon"
-                      width="28"
-                      height="28"
-                    >
-                      <use href="./assets/sprite.svg#icon_star"></use>
-                    </svg>
-                    <p class="review__slide-agent-rate">4.3</p>
-                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="review__slide">
-              <img
-                class="review__slide-img"
-                srcset="
-                  ./assets/images/review_slider_02@2x.png 2x,
-                  ./assets/images/review_slider_02@3x.png 3x
-                "
-                src="./assets/images/review_slider_02.png"
-                alt="house picture"
-                width="740"
-                height="400"
-              />
-              <div class="review__slide-label">
-                <h3 class="review__slide-title">
-                  Best! I got the house I wanted through Hounter
-                </h3>
-                <p class="review__slide-text">
-                  Through this website I can get a house with the type and
-                  specifications I want very easily, without a complicated
-                  process to be able to find information on the house we want.
-                </p>
-                <div class="review__slide-agent">
-                  <div class="review__slide-agent-box left">
-                    <img
-                      class="review__slide-agent-img"
-                      srcset="
-                        ./assets/images/avatar_01@2x.png 2x,
-                        ./assets/images/avatar_01@3x.png 3x
-                      "
-                      src="./assets/images/avatar_01.png"
-                      alt="user avatar"
-                      width="40"
-                      height="40"
-                    />
-                    <div class="review__slide-agent-title">
-                      <p class="review__slide-agent-name">Dianne Russell</p>
-                      <p class="review__slide-agent-qualification">
-                        Manager Director
-                      </p>
+              </li>
+              <li class="review__slide">
+                <img
+                  class="review__slide-img"
+                  srcset="
+                    ./assets/images/review_slider_02@2x.png 2x,
+                    ./assets/images/review_slider_02@3x.png 3x
+                  "
+                  src="./assets/images/review_slider_02.png"
+                  alt="house picture"
+                  width="740"
+                  height="400"
+                />
+                <div class="review__slide-label">
+                  <h3 class="review__slide-title">
+                    Best! I got the house I wanted through Hounter
+                  </h3>
+                  <p class="review__slide-text">
+                    Through this website I can get a house with the type and
+                    specifications I want very easily, without a complicated
+                    process to be able to find information on the house we want.
+                  </p>
+                  <div class="review__slide-agent">
+                    <div class="review__slide-agent-box left">
+                      <img
+                        class="review__slide-agent-img"
+                        srcset="
+                          ./assets/images/avatar_01@2x.png 2x,
+                          ./assets/images/avatar_01@3x.png 3x
+                        "
+                        src="./assets/images/avatar_01.png"
+                        alt="user avatar"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="review__slide-agent-title">
+                        <p class="review__slide-agent-name">Dianne Russell</p>
+                        <p class="review__slide-agent-qualification">
+                          Manager Director
+                        </p>
+                      </div>
+                    </div>
+                    <div class="review__slide-agent-box right">
+                      <svg
+                        class="review__slide-agent-icon"
+                        width="28"
+                        height="28"
+                      >
+                        <use href="./assets/sprite.svg#icon_star"></use>
+                      </svg>
+                      <p class="review__slide-agent-rate">4.6</p>
                     </div>
                   </div>
-                  <div class="review__slide-agent-box right">
-                    <svg
-                      class="review__slide-agent-icon"
-                      width="28"
-                      height="28"
-                    >
-                      <use href="./assets/sprite.svg#icon_star"></use>
-                    </svg>
-                    <p class="review__slide-agent-rate">4.6</p>
-                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="review__slide">
-              <img
-                class="review__slide-img"
-                srcset="
-                  ./assets/images/review_slider_03@2x.png 2x,
-                  ./assets/images/review_slider_03@3x.png 3x
-                "
-                src="./assets/images/review_slider_03.png"
-                alt="house picture"
-                width="740"
-                height="400"
-              />
-              <div class="review__slide-label">
-                <h3 class="review__slide-title">
-                  Through the Hounter, I can get a house for my self
-                </h3>
-                <p class="review__slide-text">
-                  By looking for information about what kind of house we want,
-                  we managed to get the house we wanted very quickly, and
-                  directly connected with the seller to be able to ask about the
-                  details, very helpful!
-                </p>
-                <div class="review__slide-agent">
-                  <div class="review__slide-agent-box left">
-                    <img
-                      class="review__slide-agent-img"
-                      srcset="
-                        ./assets/images/avatar_08@2x.png 2x,
-                        ./assets/images/avatar_08@3x.png 3x
-                      "
-                      src="./assets/images/avatar_08.png"
-                      alt="user avatar"
-                      width="40"
-                      height="40"
-                    />
-                    <div class="review__slide-agent-title">
-                      <p class="review__slide-agent-name">Esther Howard</p>
-                      <p class="review__slide-agent-qualification">
-                        Head of Marketing
-                      </p>
+              </li>
+              <li class="review__slide">
+                <img
+                  class="review__slide-img"
+                  srcset="
+                    ./assets/images/review_slider_03@2x.png 2x,
+                    ./assets/images/review_slider_03@3x.png 3x
+                  "
+                  src="./assets/images/review_slider_03.png"
+                  alt="house picture"
+                  width="740"
+                  height="400"
+                />
+                <div class="review__slide-label">
+                  <h3 class="review__slide-title">
+                    Through the Hounter, I can get a house for my self
+                  </h3>
+                  <p class="review__slide-text">
+                    By looking for information about what kind of house we want,
+                    we managed to get the house we wanted very quickly, and
+                    directly connected with the seller to be able to ask about
+                    the details, very helpful!
+                  </p>
+                  <div class="review__slide-agent">
+                    <div class="review__slide-agent-box left">
+                      <img
+                        class="review__slide-agent-img"
+                        srcset="
+                          ./assets/images/avatar_08@2x.png 2x,
+                          ./assets/images/avatar_08@3x.png 3x
+                        "
+                        src="./assets/images/avatar_08.png"
+                        alt="user avatar"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="review__slide-agent-title">
+                        <p class="review__slide-agent-name">Esther Howard</p>
+                        <p class="review__slide-agent-qualification">
+                          Head of Marketing
+                        </p>
+                      </div>
+                    </div>
+                    <div class="review__slide-agent-box right">
+                      <svg
+                        class="review__slide-agent-icon"
+                        width="28"
+                        height="28"
+                      >
+                        <use href="./assets/sprite.svg#icon_star"></use>
+                      </svg>
+                      <p class="review__slide-agent-rate">4.6</p>
                     </div>
                   </div>
-                  <div class="review__slide-agent-box right">
-                    <svg
-                      class="review__slide-agent-icon"
-                      width="28"
-                      height="28"
-                    >
-                      <use href="./assets/sprite.svg#icon_star"></use>
-                    </svg>
-                    <p class="review__slide-agent-rate">4.6</p>
-                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-</div>
+              </li>
+            </ul>
+          </div>
           <ul class="review__dots">
             <li class="review__dot">
               <button id="1" class="review__dot-button"></button>
             </li>
             <li class="review__dot">
               <button id="2" class="review__dot-button active"></button>
-</li>
+            </li>
             <li class="review__dot">
               <button id="3" class="review__dot-button"></button>
             </li>
@@ -1581,19 +1583,23 @@
           <h2 class="subscribe__title section-title">
             Subscribe For More Info<br />and update from Hounter
           </h2>
-          <label class="subscribe__label" for="subscribe__field">
-            <svg class="subscribe__icon-location" width="24" height="24">
-              <use href="./assets/sprite.svg#icon_mail"></use>
-            </svg>
-            <input
-              class="subscribe__input"
-              id="subscribe__field"
-              placeholder="Your email here"
-            />
-            <button type="button" class="btn subscribe__btn">
-              <span class="subscribe__btn-span">Subsribe Now</span>
-            </button>
-          </label>
+          <form class="subscribe__form">
+            <label class="subscribe__label" for="subscribe__field">
+              <svg class="subscribe__icon-location" width="24" height="24">
+                <use href="./assets/sprite.svg#icon_mail"></use>
+              </svg>
+              <input
+                pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+                type="email"
+                class="subscribe__input"
+                id="subscribe__field"
+                placeholder="Your email here"
+              />
+              <button type="submit" class="btn subscribe__btn">
+                <span class="subscribe__btn-span">Subsribe Now</span>
+              </button>
+            </label>
+          </form>
           <img
             class="subscribe__img first"
             srcset="

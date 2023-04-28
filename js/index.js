@@ -1,10 +1,3 @@
-// const refs = {
-//   openModalBtn: document.querySelector("[data-modal-open]"),
-//   closeModalBtn: document.querySelector("[data-modal-close]"),
-//   modal: document.querySelector("[data-modal]"),
-//   options: document.querySelector(".nav__option"),
-// };
-
 //-Header--------------------------------------//
 
 const select = document.querySelector(".nav__page.select");
@@ -32,6 +25,14 @@ function heroSlyder() {
 }
 
 setInterval(heroSlyder, 3000);
+
+const heroInput = document.querySelector(".hero__input");
+document.querySelector(".hero__form")
+  .addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert(heroInput.value);
+    e.target.reset();
+  });
 
 //-Recom---------------------------------------//
 
@@ -380,3 +381,13 @@ function onDotClick(btn, index) {
       reviewUl.style.left = `${outer.width}px`;
   }
 }
+
+//-Review--------------------------------------//
+
+const subscribeInput = document.querySelector(".subscribe__input");
+document.querySelector(".subscribe__form")
+  .addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert(subscribeInput.value);
+    e.target.reset();
+  });
