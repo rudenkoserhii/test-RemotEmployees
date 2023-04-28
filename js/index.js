@@ -382,7 +382,7 @@ function onDotClick(btn, index) {
   }
 }
 
-//-Review--------------------------------------//
+//-Subscribe-----------------------------------//
 
 const subscribeInput = document.querySelector(".subscribe__input");
 document.querySelector(".subscribe__form")
