@@ -1,73 +1,97 @@
 .backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background: $background-backdrop;
+  background: $background-backdrop;
 
-    z-index: 100;
+  z-index: 100;
 
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 
-    transition: opacity $timing-function-main,
-        visibility $timing-function-main;
+  transition: opacity $timing-function-main, visibility $timing-function-main;
 }
 
 .modal {
-    position: absolute;
-    top: 221px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 
-    width: auto;
-    height: auto;
-    box-shadow: $shadow-first;
+  width: auto;
+  height: auto;
+  box-shadow: $shadow-first;
+  border-radius: 2px;
+  padding: 20px;
+
+  background-color: $background-main;
+
+  transition: transform $timing-function-main;
+
+  @media screen and (min-width: 1200px) {
+    top: 221px;
     border-radius: 4px;
     padding: 40px;
+  }
 
-    background-color: $background-main;
+  @media screen and (min-width: 1920px) {
+    top: 221px;
+  }
 
-    transition: transform $timing-function-main;
+  & > img {
+    position: static;
+    width: calc(100vw - 100px);
+    height: auto;
 
-& > img {
-position: static;
-width: 500px;
-height: auto;
-}
+    @media screen and (min-width: 1200px) {
+      width: 500px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: 600px;
+    }
+  }
 }
 
 .modal__btn-close {
-    position: absolute;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: $background-main;
+  border: $border-btn-gray;
+
+  transition: fill $timing-function-main;
+
+  @media screen and (min-width: 1200px) {
     top: 8px;
     right: 8px;
-    padding: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    cursor: pointer;
-    border-radius: 50%;
     width: 30px;
     height: 30px;
-    background-color: $background-main;
-    border: $border-btn-gray;
+  }
 
-    transition: fill $timing-function-main;
-
-    &:hover,
-    &:focus {
-        fill: $icon-social;
-    }
+  &:hover,
+  &:focus {
+    fill: $icon-social;
+  }
 }
-

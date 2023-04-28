@@ -264,16 +264,18 @@ summary {
 .container {
   width: 100%;
   padding: 0px 0px;
-  margin: 0px auto 120px auto;
+  margin: 0px auto 80px auto;
   position: relative;
 }
 @media screen and (min-width: 1200px) {
   .container {
+    margin: 0px auto 120px auto;
     width: 1200px;
   }
 }
 @media screen and (min-width: 1920px) {
   .container {
+    margin: 0px auto 160px auto;
     width: 1920px;
   }
 }
@@ -318,7 +320,7 @@ svg {
 .section-name {
   position: relative;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.29;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -327,10 +329,20 @@ svg {
   text-transform: capitalize;
   color: #F59E0B;
 }
+@media screen and (min-width: 1200px) {
+  .section-name {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .section-name {
+    font-size: 16px;
+  }
+}
 
 .section-title {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.25;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -338,6 +350,16 @@ svg {
   text-align: center;
   text-transform: capitalize;
   color: #1B1C57;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .btn {
@@ -350,21 +372,35 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 12px 16px;
-  gap: 16px;
+  padding: 10px 14px;
+  gap: 14px;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   white-space: nowrap;
   background: #10B981;
-  border-radius: 32px;
+  border-radius: 28px;
   border: none;
   outline: none;
   cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+  .btn {
+    padding: 12px 16px;
+    gap: 16px;
+    border-radius: 32px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .btn {
+    padding: 16px 20px;
+    gap: 24px;
+    border-radius: 36px;
+  }
+}
 .btn > span {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.57;
   color: #ffffff;
   -webkit-box-flex: 0;
@@ -375,6 +411,16 @@ svg {
           order: 0;
   -ms-flex-positive: 0;
       flex-grow: 0;
+}
+@media screen and (min-width: 1200px) {
+  .btn > span {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .btn > span {
+    font-size: 16px;
+  }
 }
 .btn:hover, .btn:focus {
   outline: 1px solid #1B1C57;
@@ -395,14 +441,34 @@ svg {
   width: -moz-fit-content;
   width: fit-content;
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    gap: 14px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .logo {
+    gap: 16px;
+  }
+}
 
 .logo__title {
   color: #1B1C57;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   text-transform: capitalize;
   color: #1b1c57;
+}
+@media screen and (min-width: 1200px) {
+  .logo__title {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .logo__title {
+    font-size: 18px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -427,7 +493,7 @@ svg {
 
 .modal {
   position: absolute;
-  top: 221px;
+  top: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -435,24 +501,46 @@ svg {
   height: auto;
   -webkit-box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
           box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
-  border-radius: 4px;
-  padding: 40px;
+  border-radius: 2px;
+  padding: 20px;
   background-color: #ffffff;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 221px;
+    border-radius: 4px;
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .modal {
+    top: 221px;
+  }
+}
 .modal > img {
   position: static;
-  width: 500px;
+  width: calc(100vw - 100px);
   height: auto;
+}
+@media screen and (min-width: 1200px) {
+  .modal > img {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .modal > img {
+    width: 600px;
+  }
 }
 
 .modal__btn-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 4px;
+  right: 4px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,12 +553,20 @@ svg {
           align-items: center;
   cursor: pointer;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: #ffffff;
   border: 1px solid #E0E3EB;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal__btn-close {
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+  }
 }
 .modal__btn-close:hover, .modal__btn-close:focus {
   fill: #3C4563;
@@ -1752,7 +1848,6 @@ x .recommendation__btns > .btn > svg {
           transform: translateX(-50%);
   background: #F59E0B;
 }
-
 .article__title {
   margin: 0px auto 24px auto;
 }

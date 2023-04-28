@@ -1,15 +1,17 @@
 .container {
   width: 100%;
   padding: 0px 0px;
-  margin: 0px auto 120px auto;
+  margin: 0px auto 80px auto;
 
   position: relative;
 
   @media screen and (min-width: 1200px) {
+    margin: 0px auto 120px auto;
     width: 1200px;
   }
 
   @media screen and (min-width: 1920px) {
+    margin: 0px auto 160px auto;
     width: 1920px;
   }
 }

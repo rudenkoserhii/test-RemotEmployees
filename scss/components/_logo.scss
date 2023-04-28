@@ -4,15 +4,31 @@
   align-items: center;
   gap: 12px;
 
-width: fit-content;
+  width: fit-content;
+
+  @media screen and (min-width: 1200px) {
+    gap: 14px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    gap: 16px;
+  }
 }
 
 .logo__title {
   color: $text-main;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   text-transform: capitalize;
 
   color: #1b1c57;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 18px;
+  }
 }
