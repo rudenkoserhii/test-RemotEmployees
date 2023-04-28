@@ -1,9 +1,9 @@
-const refs = {
-  openModalBtn: document.querySelector("[data-modal-open]"),
-  closeModalBtn: document.querySelector("[data-modal-close]"),
-  modal: document.querySelector("[data-modal]"),
-  options: document.querySelector(".nav__option"),
-};
+// const refs = {
+//   openModalBtn: document.querySelector("[data-modal-open]"),
+//   closeModalBtn: document.querySelector("[data-modal-close]"),
+//   modal: document.querySelector("[data-modal]"),
+//   options: document.querySelector(".nav__option"),
+// };
 
 //-Header--------------------------------------//
 
@@ -209,41 +209,52 @@ sell.addEventListener("mouseout", () => {
 
 const openModalBtn = document.querySelector("[data-modal-open]");
 const closeModalBtn = document.querySelector("[data-modal-close]");
-const modal = document.querySelector("[data-modal]");
+const modal = document.querySelector("[data-modal-window]");
 
-(() => {
-  openModalBtn.addEventListener("click", (e) => {
-    toggleModal(e);
+openModalBtn.addEventListener("click", (e) => {
+  if (!modal.classList.contains("is-hidden")) {
+    closeModal(e);
+  } else if (
+    !e.target.classList.contains("modal__btn-close") &&
+    !e.target.classList.contains("modal__close-icon") &&
+    !e.target.classList.contains("modal__close-icon-use")
+  ) {
+    openModal(e);
     clearInterval(intervalId);
-  });
-  closeModalBtn.addEventListener("click", (e) => {
-    toggleModal(e);
-    intervalId = setInterval(sellSlyder, 5000);
-  });
-
-  window.addEventListener("keydown", (e) => {
-    if (e.code === "Escape") {
-      toggleModal(e);
-      intervalId = setInterval(sellSlyder, 5000);
-    }
-  });
-
-  function toggleModal(e) {
-    modal.classList.toggle("is-hidden");
-    const div = modal.querySelector(".modal");
-    const button = div.querySelector("button");
-    div.innerHTML = "";
-    div.insertAdjacentHTML("beforeend", button.outerHTML);
-
-    const img = div.querySelector("img");
-    if (img) {
-      div.removeChild(img);
-    }
-    if (e.target.nodeName === "IMG") {
-      div.insertAdjacentHTML("beforeend", e.target.outerHTML);
-    }
   }
-})();
+});
+
+function closeByEsc(e) {
+  if (e.code === "Escape") {
+    closeModal(e);
+  }
+}
+
+function closeByButton(e) {
+  closeModal(e);
+}
+
+function closeModal(e) {
+  modal.classList.add("is-hidden");
+  window.removeEventListener("keydown", closeByEsc);
+  intervalId = setInterval(sellSlyder, 5000);
+}
+
+function openModal(e) {
+  window.addEventListener("keydown", closeByEsc);
+  closeModalBtn.addEventListener("click", closeByButton);
+
+  const div = document.querySelector(".modal");
+
+  const img = div.querySelector("img");
+  if (img) {
+    div.removeChild(img);
+  }
+  if (e.target.nodeName === "IMG") {
+    div.insertAdjacentHTML("beforeend", e.target.outerHTML);
+  }
+  modal.classList.remove("is-hidden");
+}
 
 //-Review--------------------------------------//
 
