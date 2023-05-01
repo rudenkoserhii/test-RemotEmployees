@@ -27,12 +27,11 @@ function heroSlyder() {
 setInterval(heroSlyder, 3000);
 
 const heroInput = document.querySelector(".hero__input");
-document.querySelector(".hero__form")
-  .addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert(heroInput.value);
-    e.target.reset();
-  });
+document.querySelector(".hero__form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert(heroInput.value);
+  e.target.reset();
+});
 
 //-Recom---------------------------------------//
 
@@ -47,7 +46,9 @@ let liRecom = cards;
 // );
 
 const vw = ulRecom.getBoundingClientRect().width;
-const gap = Number(document.defaultView.getComputedStyle(ulRecom).gap.split('px')[0]);
+const gap = Number(
+  document.defaultView.getComputedStyle(ulRecom).gap.split("px")[0]
+);
 const cardWidth = cards[0].getBoundingClientRect().width;
 
 let min = 0;
@@ -55,8 +56,8 @@ let max = Math.floor((vw - gap) / (cardWidth + gap));
 
 const inputs = document.querySelectorAll(".recommendation__input");
 const labels = document.querySelectorAll(".recommendation__label");
-const icons = document.querySelectorAll(".recommendation__span");
-const texts = document.querySelectorAll(".recommendation__icon-radio");
+const icons = document.querySelectorAll(".recommendation__icon-radio");
+const texts = document.querySelectorAll(".recommendation__span");
 
 inputs.forEach((input) => input.addEventListener("click", onInputClick));
 
@@ -224,8 +225,8 @@ openModalBtn.addEventListener("click", (e) => {
     !e.target.classList.contains("modal__close-icon") &&
     !e.target.classList.contains("modal__close-icon-use")
   ) {
-    openModal(e);
     clearInterval(intervalId);
+    openModal(e);
   }
 });
 
@@ -242,7 +243,6 @@ function closeByButton(e) {
 function closeModal(e) {
   modal.classList.add("is-hidden");
   window.removeEventListener("keydown", closeByEsc);
-  intervalId = setInterval(sellSlyder, 5000);
 }
 
 function openModal(e) {
@@ -257,6 +257,7 @@ function openModal(e) {
   }
   if (e.target.nodeName === "IMG") {
     div.insertAdjacentHTML("beforeend", e.target.outerHTML);
+    div.querySelector("img").style.transform = "none";
   }
   modal.classList.remove("is-hidden");
 }
@@ -389,9 +390,8 @@ function onDotClick(btn, index) {
 //-Subscribe-----------------------------------//
 
 const subscribeInput = document.querySelector(".subscribe__input");
-document.querySelector(".subscribe__form")
-  .addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert(subscribeInput.value);
-    e.target.reset();
-  });
+document.querySelector(".subscribe__form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert(subscribeInput.value);
+  e.target.reset();
+});
