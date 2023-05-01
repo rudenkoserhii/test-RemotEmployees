@@ -280,3 +280,15 @@
     width: 100%;
   }
 }
+
+.article__slide-agent-icon {
+    @media screen and (min-width: 1200px) {
+width: 24px;
+height: 24px;
+    }
+
+    @media screen and (min-width: 1920px) {
+width: 28px;
+height: 28px;
+    }
+}
