@@ -1,100 +1,298 @@
 .subscribe__background {
-background: linear-gradient(to right, #ACC6F7 0%, 3.38%, #BACCF4 6.76%, 9.64%, #C5D2F3 12.53%, 16.83%, #D0D8F3 21.12%, 21.97%, #D3DBF4 22.81%, 23.52%, #D3DBF4 24.22%, 27.18%, #DBE0F4 30.14%, 32.32%, #E2E6F4 34.50%, 37.95%, #EBF0F6 41.40%, 41.90%, #EBF1F7 42.39%, 44.36%, #EFF7F8 46.33%, 52.32%, #F2FDF9 58.30%, 66.54%, #F2FBF8 74.78%, 83.59%, #EFF2FA 92.39%, 96.19%, #E8EAF8 100%);
-// background-size: calc(100% - 2 * 120px), calc(100% - 2 * 120px);
-// background-repeat: no-repeat;
-// background-position: center;
+  position: relative;
 
-// min-width: 1200px;
-// max-width: 1920px;
-height: 312px;
+  background: linear-gradient(
+    to right,
+    #acc6f7 0%,
+    3.38%,
+    #baccf4 6.76%,
+    9.64%,
+    #c5d2f3 12.53%,
+    16.83%,
+    #d0d8f3 21.12%,
+    21.97%,
+    #d3dbf4 22.81%,
+    23.52%,
+    #d3dbf4 24.22%,
+    27.18%,
+    #dbe0f4 30.14%,
+    32.32%,
+    #e2e6f4 34.5%,
+    37.95%,
+    #ebf0f6 41.4%,
+    41.9%,
+    #ebf1f7 42.39%,
+    44.36%,
+    #eff7f8 46.33%,
+    52.32%,
+    #f2fdf9 58.3%,
+    66.54%,
+    #f2fbf8 74.78%,
+    83.59%,
+    #eff2fa 92.39%,
+    96.19%,
+    #e8eaf8 100%
+  );
 
-border-radius: 32px;
+  height: 250px;
 
-padding-top: 65px;
-padding-bottom: 65px;
+  border-radius: 20px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (min-width: 1200px) {
+    height: 312px;
+    min-width: 1030px;
+
+    border-radius: 32px;
+
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 312px;
+
+    border-radius: 36px;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    gap: 36px;
+  }
 }
 
 .subscribe__img {
-position: absolute;
-border: 2px solid $background-main;
-border-radius: 24px;
- &.first {
-left: 44px;
-top: 38px;
-}
- &.second {
-left: 195px;
-top: 178px;
-}
- &.third {
-left: 930px;
-top: 44px;
-}
- &.fourth {
-left: 1072px;
-top: 197px;
-}
+  position: absolute;
+  border: 2px solid $background-main;
+  border-radius: 8px;
 
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    border-radius: 28px;
+  }
+
+  &.first {
+    left: 44px;
+    top: 38px;
+
+    @media screen and (min-width: 1200px) {
+      width: 81px;
+      height: 81px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: 85px;
+      height: 85px;
+    }
+  }
+
+  &.second {
+    left: 105px;
+    bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      width: 54px;
+      height: 54px;
+
+      left: 195px;
+      bottom: 80px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: 58px;
+      height: 58px;
+
+      left: 295px;
+    }
+  }
+
+  &.third {
+    right: 200px;
+    top: 34px;
+
+    @media screen and (min-width: 1200px) {
+      width: 70px;
+      height: 70px;
+
+      top: 44px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: 74px;
+      height: 74px;
+
+      right: 300px;
+    }
+  }
+
+  &.fourth {
+    right: 73px;
+    bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+      width: 55px;
+      height: 55px;
+
+      bottom: 60px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: 59px;
+      height: 59px;
+    }
+  }
 }
 
 .subscribe__agent-img {
-position: absolute;
-border: 2px solid $background-main;
-border-radius: 50%;
-filter: $filter-avatar;
- &.first {
-left: 67px;
-top: 173px;
-}
- &.second {
-left: 204px;
-top: 71px;
-}
- &.third {
-left: 1082px;
-top: 107px;
-}
- &.fourth {
-left: 964px;
-top: 143px;
-}
+  position: absolute;
+  border: 2px solid $background-main;
+  border-radius: 50%;
+  filter: $filter-avatar;
 
-}
+  @media screen and (min-width: 1200px) {
+    width: 36px;
+    height: 36px;
+  }
 
-.subscribe__title {
-margin: 0px auto 32px auto;
+  @media screen and (min-width: 1920px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &.first {
+    left: 37px;
+    bottom: 33px;
+
+    @media screen and (min-width: 1200px) {
+      left: 67px;
+      bottom: 103px;
+    }
+  }
+
+  &.second {
+    left: 204px;
+    top: 11px;
+
+    @media screen and (min-width: 1200px) {
+      top: 71px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      left: 304px;
+    }
+  }
+
+  &.third {
+    right: 12px;
+    top: 107px;
+
+    @media screen and (min-width: 1200px) {
+      right: 82px;
+    }
+  }
+
+  &.fourth {
+    right: 200px;
+    bottom: 23px;
+
+    @media screen and (min-width: 1200px) {
+      bottom: 143px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      right: 300px;
+    }
+  }
 }
 
 .subscribe__label {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 4px 4px 4px 24px;
-gap: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 2px 2px 20px;
+  gap: 10px;
 
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-width: 496px;
-height: 54px;
+  width: 300px;
+  height: 36px;
 
-background: $background-main;
-/* Shadow / Smooth */
+  background: $background-main;
 
-box-shadow: $shadow-first;
-border-radius: 32px;
+  box-shadow: $shadow-first;
+  border-radius: 22px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 4px 4px 4px 24px;
+    gap: 16px;
+
+    width: 496px;
+    height: 54px;
+
+    border-radius: 32px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    padding: 6px 6px 6px 28px;
+    gap: 20px;
+
+    width: 550px;
+    height: 64px;
+
+    border-radius: 36px;
+  }
 }
 
 .subscribe__input {
-width: 283px;
-height: 22px;
+  width: 100%;
+  height: 100%;
 
-font-weight: 500;
-font-size: 14px;
-line-height: 1.57;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
 
-color: $text-gray;
+  color: $text-gray;
 
-outline: none;
-border: none;
+  outline: none;
+  border: none;
+
+  @media screen and (min-width: 1200px) {
+  }
+
+  @media screen and (min-width: 1920px) {
+  }
+}
+
+.subscribe__btn {
+  height: 100%;
+
+  margin-right: 0px;
+}
+
+.subscribe__icon-mail {
+  margin-left: 0px;
+
+  @media screen and (min-width: 1200px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 28px;
+    height: 28px;
+  }
 }
