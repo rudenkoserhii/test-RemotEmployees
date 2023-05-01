@@ -17,10 +17,12 @@
 .recommendation__nav-container {
   display: flex;
   align-items: flex-end;
-  justify-content: start;
+  justify-content: space-between;
   gap: 138px;
 
   margin-bottom: 40px;
+
+max-width: 100%;
 }
 
 .recommendation__title {
@@ -104,7 +106,7 @@
 .recommendation__slides {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 40px;
 }
 

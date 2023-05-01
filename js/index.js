@@ -41,13 +41,17 @@ const ulRecom = document.querySelector(".recommendation__slides");
 
 let liRecom = cards;
 
-const vw = Math.max(
-  document.documentElement.clientWidth || 0,
-  window.innerWidth || 0
-);
+// const vw = Math.max(
+//   document.documentElement.clientWidth || 0,
+//   window.innerWidth || 0
+// );
+
+const vw = ulRecom.getBoundingClientRect().width;
+const gap = Number(document.defaultView.getComputedStyle(ulRecom).gap.split('px')[0]);
+const cardWidth = cards[0].getBoundingClientRect().width;
 
 let min = 0;
-let max = Math.floor(vw / 380);
+let max = Math.floor((vw - gap) / (cardWidth + gap));
 
 const inputs = document.querySelectorAll(".recommendation__input");
 const labels = document.querySelectorAll(".recommendation__label");
@@ -71,7 +75,7 @@ function onInputClick(e) {
       el.classList.contains(e.target.value) ? (el.style.color = "#888B97") : ""
     );
     min = 0;
-    max = Math.floor(vw / 380);
+    max = Math.floor((vw - gap) / (cardWidth + gap));
     liRecom = cards;
     recomSlyder(min, max, [...cards]);
     return;
@@ -110,9 +114,9 @@ function onInputClick(e) {
   liRecom = document.querySelectorAll(".recommendation__slide");
   min = 0;
   max =
-    Math.floor(vw / 380) > liRecom.length
+    Math.floor((vw - gap) / (cardWidth + gap)) > liRecom.length
       ? liRecom.length
-      : Math.floor(vw / 380);
+      : Math.floor((vw - gap) / (cardWidth + gap));
   recomSlyder(min, max, [...liRecom]);
 }
 
