@@ -1,234 +1,175 @@
 .header {
   position: relative;
 
-  // padding: 0px 0px;
-
   width: 100%;
   margin: 0px auto;
-
-  @media screen and (min-width: 1200px) {
-  }
-
-  @media screen and (min-width: 1920px) {
-  }
-
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 1200px;
-  // }
 }
+
 .header__container {
   position: absolute;
-// left: 0px;
   top: calc(100% + 40px);
-left: 0px;
+  left: 0px;
 
-width: 100%;
+  width: 100%;
 
   z-index: 10;
 
-  // width: calc(100vw - 2 * 80px);
-  // padding: 0px 80px;
-
   @media screen and (min-width: 600px) {
-  left: 50%;
-transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
   }
-
-  @media screen and (min-width: 1200px) {
-  // left: 120px;
-    // width: calc(100vw - 2 * 120px);
-
-  // padding: 0px 120px;
-  }
-
-  @media screen and (min-width: 1920px) {
-  // left: 160px;
-    // width: calc(100vw - 2 * 160px);
-
-  // padding: 0px 160px;
-  }
-
-
 }
 
 .header__menu-container {
   display: flex;
   align-items: flex-start;
-
   justify-content: space-between;
-
-
-// width: 100%;
 
   height: 46px;
 
   @media screen and (min-width: 1200px) {
-  align-items: center;
-
+    align-items: center;
   }
-
-  @media screen and (min-width: 1920px) {
-
-  }
-
 }
-
-
 
 .header__menu {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
 
   width: 200px;
-padding: 4px;
-border-radius: 24px;
-margin-right: 50px;
+  padding: 4px;
+  border-radius: 24px;
+  margin-right: 50px;
 
-visibility: hidden;
+  visibility: hidden;
 
-background-color: $background-main;
+  background-color: $background-main;
 
-& .nav__link, .nav__option {
-color: $text-main;
-}
-& .nav__icon {
-fill: $text-main;
-}
-
-  @media screen and (min-width: 1200px) {
-gap: 20px;
-
-padding: 0px;
-border-radius: 0px;
-margin-right: 0px;
-
-visibility: visible;
-flex-direction: row;
-// justify-content: flex-start;
-  width: fit-content;
-
-background-color: transparent;
-
-& .nav__link, .nav__option {
-color: $text-nav;
-}
-
-& .nav__icon {
-fill: $text-nav;
-}
-
-& .nav__btn {
-fill: $text-nav;
-}
-
-  @media screen and (min-width: 1300px) {
-gap: 56px;
+  & .nav__link,
+  .nav__option {
+    color: $text-main;
+  }
+  & .nav__icon {
+    fill: $text-main;
   }
 
+  @media screen and (min-width: 1200px) {
+    gap: 20px;
+
+    padding: 0px;
+    border-radius: 0px;
+    margin-right: 0px;
+
+    visibility: visible;
+    flex-direction: row;
+
+    width: fit-content;
+
+    background-color: transparent;
+
+    & .nav__link,
+    .nav__option {
+      color: $text-nav;
+    }
+
+    & .nav__icon {
+      fill: $text-nav;
+    }
+
+    & .nav__btn {
+      fill: $text-nav;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    gap: 56px;
   }
 
   @media screen and (min-width: 1920px) {
-gap: 66px;
+    gap: 66px;
 
-margin-right: 200px;
+    margin-right: 200px;
   }
 }
 
 .header__menu-btn {
-visibility: visible;
-cursor: pointer;
-background-color: transparent;
-border: 2px solid $text-nav;
-border-radius: 4px;
-outline: none;
-padding: 2px;
-margin: 0;
-& .header__menu-btn-icon {
-fill: $text-nav;
-}
+  visibility: visible;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid $text-nav;
+  border-radius: 4px;
+  outline: none;
+  padding: 2px;
+  margin: 0;
 
-&:hover {
-border-color: $icon-accent;
-}
-  @media screen and (min-width: 1200px) {
-visibility: hidden;
+  & .header__menu-btn-icon {
+    fill: $text-nav;
   }
 
-  @media screen and (min-width: 1920px) {
+  &:hover {
+    border-color: $icon-accent;
+  }
 
+  @media screen and (min-width: 1200px) {
+    visibility: hidden;
   }
 }
 
 .nav {
-  // margin-right: 56px;
-  // margin-left: 578px;
-
   width: fit-content;
-
-  @media screen and (min-width: 1200px) {
-
-  }
-
-  @media screen and (min-width: 1920px) {
-
-  }
 }
 
 .nav__pages {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 24px;
 
   @media screen and (min-width: 1200px) {
-gap: 12px;
+    gap: 12px;
 
-flex-direction: row;
+    flex-direction: row;
   }
 
   @media screen and (min-width: 1300px) {
-gap: 24px;
+    gap: 24px;
   }
 
   @media screen and (min-width: 1920px) {
-gap: 28px;
+    gap: 28px;
   }
 }
 
 .nav__page {
   position: relative;
 
-  padding: 8px 16px;
+  padding: 6px 12px;
 
   width: fit-content;
-  height: 34px;
+  height: 30px;
 
   background: $background-nav;
   border: $border-nav;
-  border-radius: 32px;
-
-  // flex: none;
-  // order: 0;
-  // flex-grow: 0;
+  border-radius: 28px;
 
   @media screen and (min-width: 1200px) {
+    padding: 8px 16px;
 
+    height: 34px;
+
+    border-radius: 32px;
   }
 
   @media screen and (min-width: 1920px) {
+    padding: 10px 20px;
 
+    height: 36px;
+
+    border-radius: 34px;
   }
 
   &.select:hover > .nav__options > .nav__option,
@@ -239,60 +180,52 @@ gap: 28px;
 
 .nav__btn {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.57;
 
   color: $text-green;
   background-color: $background-light-green;
 
-  // flex: none;
-  // order: 0;
-  // flex-grow: 0;
-
   @media screen and (min-width: 1200px) {
-
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1920px) {
-
+    font-size: 16px;
   }
 }
 
 .nav__link,
 .nav__option {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.29;
 
   text-transform: capitalize;
 
   color: $text-nav;
 
-  // flex: none;
-  // order: 0;
-  // flex-grow: 0;
-
   @media screen and (min-width: 1200px) {
-
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1920px) {
-
+    font-size: 16px;
   }
 
   &.select {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
 
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
+      gap: 10px;
+    }
 
-  }
-
-  @media screen and (min-width: 1920px) {
-
-  }
+    @media screen and (min-width: 1920px) {
+      gap: 12px;
+    }
   }
 }
 
@@ -302,11 +235,13 @@ gap: 28px;
   transform: rotate(90deg);
 
   @media screen and (min-width: 1200px) {
-
+    width: 18px;
+    height: 18px;
   }
 
   @media screen and (min-width: 1920px) {
-
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -321,14 +256,14 @@ gap: 28px;
   flex-direction: column;
   align-items: center;
 
-  gap: 10px;
+  gap: 8px;
 
   @media screen and (min-width: 1200px) {
-
+    gap: 10px;
   }
 
   @media screen and (min-width: 1920px) {
-
+    gap: 12px;
   }
 
   &.is-hidden {
@@ -341,7 +276,10 @@ gap: 28px;
 
   &:hover,
   &:focus {
-    color: $icon-accent;
+    color: $text-light-blue;
+
+    @media screen and (min-width: 1200px) {
+      color: $icon-accent;
+    }
   }
 }
-

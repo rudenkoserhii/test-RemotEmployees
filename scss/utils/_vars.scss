@@ -1,38 +1,38 @@
 //blur color
-$blur-1: #82FFD2;
-$blur-2: #82F7FF;
-$blur-3: #FF9882;
-$blur-4: #FFFA82;
-$blur-5: #82FFE8;
-$blur-6: #C8FF82;
-$blur-7: #82BBFF;
-$blur-8: #B9FF82;
+$blur-1: #82ffd2;
+$blur-2: #82f7ff;
+$blur-3: #ff9882;
+$blur-4: #fffa82;
+$blur-5: #82ffe8;
+$blur-6: #c8ff82;
+$blur-7: #82bbff;
+$blur-8: #b9ff82;
 
 //background color
 $background-main: #ffffff;
-$background-btn: #10B981;
-$background-red: #FEE2E2;
-$background-light-blue: #DBEAFE;
-$background-light-green: #D1FAE5;
-$background-gray: #E0E3EB;
-$background-line: #F0F3FD;
+$background-btn: #10b981;
+$background-red: #fee2e2;
+$background-light-blue: #dbeafe;
+$background-light-green: #d1fae5;
+$background-gray: #e0e3eb;
+$background-line: #f0f3fd;
 $background-nav: rgba(255, 255, 255, 0.1);
 $background-backdrop: rgba(0, 0, 0, 0.2);
 
 // text color
-$text-main: #1B1C57;
-$text-orange: #F59E0B;
-$text-secondary: #3C4563;
+$text-main: #1b1c57;
+$text-orange: #f59e0b;
+$text-secondary: #3c4563;
 $text-white: #ffffff;
 $text-black: #000000;
-$text-gray: #888B97;
+$text-gray: #888b97;
 $text-grey: #626687;
-$text-footer: #0E1735;
-$text-red: #EF4444;
-$text-blue: #1D4ED8;
+$text-footer: #0e1735;
+$text-red: #ef4444;
+$text-blue: #1d4ed8;
 $text-green: #047857;
-$text-light-blue: #68799F;
-$text-nav: #F0F3FD;
+$text-light-blue: #68799f;
+$text-nav: #f0f3fd;
 
 // filters
 $filter-avatar: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
@@ -42,19 +42,18 @@ $shadow-first: 0px 9px 32px rgba(89, 92, 219, 0.05);
 $shadow-second: 0px 11px 48px rgba(51, 51, 51, 0.06);
 
 // icon-color
-$icon-social: #3C4563;
-$icon-accent: #1B1C57;
-$icon-green: #10B981;
-$icon-gray: #888B97;
-$icon-blue: #1D4ED8;
+$icon-social: #3c4563;
+$icon-accent: #1b1c57;
+$icon-green: #10b981;
+$icon-gray: #888b97;
+$icon-blue: #1d4ed8;
 $icon-green2: #047857;
 $icon-white: #ffffff;
 
 // borders
-$border-btn-gray: 1px solid #E0E3EB;
-$border-title: 1px #1B1C57;
+$border-btn-gray: 1px solid #e0e3eb;
+$border-title: 1px #1b1c57;
 $border-nav: 1px solid rgba(255, 255, 255, 0.3);
 
 //transition
 $timing-function-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-

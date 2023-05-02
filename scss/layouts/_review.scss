@@ -1,5 +1,5 @@
 .review__section-name {
-position: relative;
+  position: relative;
 
   margin: 7px auto 10px auto;
 
@@ -45,7 +45,6 @@ position: relative;
   @media screen and (min-width: 1920px) {
     margin: 0px auto 48px auto;
   }
-
 }
 
 .review__slides-container {
@@ -55,13 +54,12 @@ position: relative;
   height: 420px;
 
   @media screen and (min-width: 1200px) {
-  height: 505px;
+    height: 505px;
   }
 
   @media screen and (min-width: 1920px) {
-  height: 560px;
+    height: 560px;
   }
-
 }
 
 .review__slides {
@@ -78,17 +76,17 @@ position: relative;
   transform: translateX(-50%);
 
   @media screen and (min-width: 1200px) {
-  width: 233.333333333%;
+    width: 233.333333333%;
   }
 
   @media screen and (min-width: 1920px) {
-  width: 203.333333333%;
+    width: 203.333333333%;
   }
 }
 
 .review__slide {
   position: relative;
-// height: 100%;
+  // height: 100%;
 }
 
 .review__slide-label {
@@ -101,9 +99,9 @@ position: relative;
   width: calc(100% - 4 * 24px);
   height: auto;
   top: 64%;
-    left: 50%;
+  left: 50%;
 
-    transform: translateX(-50%);
+  transform: translateX(-50%);
 
   background: $background-main;
 
@@ -111,21 +109,20 @@ position: relative;
   border-radius: 10px;
 
   @media screen and (min-width: 1200px) {
-  padding: 32px;
+    padding: 32px;
 
-  width: calc(100% - 4 * 32px);
+    width: calc(100% - 4 * 32px);
 
-  border-radius: 16px;
+    border-radius: 16px;
   }
 
   @media screen and (min-width: 1920px) {
-  padding: 36px;
+    padding: 36px;
 
-  width: calc(100% - 4 * 36px);
+    width: calc(100% - 4 * 36px);
 
-  border-radius: 26px;
+    border-radius: 26px;
   }
-
 }
 
 .review__slide-title {
@@ -133,7 +130,7 @@ position: relative;
   font-size: 16px;
   line-height: 1.25;
 
-// white-space: nowrap;
+  // white-space: nowrap;
 
   text-transform: capitalize;
 
@@ -146,15 +143,15 @@ position: relative;
   margin-bottom: 10px;
 
   @media screen and (min-width: 1200px) {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 
-  font-size: 20px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: 1920px) {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 
-  font-size: 22px;
+    font-size: 22px;
   }
 }
 
@@ -174,15 +171,15 @@ position: relative;
   margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
 
-  font-size: 14px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1920px) {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 
-  font-size: 16px;
+    font-size: 16px;
   }
 }
 
@@ -202,25 +199,25 @@ position: relative;
   &.left {
     gap: 12px;
 
-  @media screen and (min-width: 1200px) {
-    gap: 24px;
-  }
+    @media screen and (min-width: 1200px) {
+      gap: 24px;
+    }
 
-  @media screen and (min-width: 1920px) {
-    gap: 28px;
-  }
+    @media screen and (min-width: 1920px) {
+      gap: 28px;
+    }
   }
 
   &.right {
     gap: 6px;
 
-  @media screen and (min-width: 1200px) {
-    gap: 16px;
-  }
+    @media screen and (min-width: 1200px) {
+      gap: 16px;
+    }
 
-  @media screen and (min-width: 1920px) {
-    gap: 20px;
-  }
+    @media screen and (min-width: 1920px) {
+      gap: 20px;
+    }
   }
 }
 
@@ -235,11 +232,11 @@ position: relative;
   // order: 1;
   // flex-grow: 0;
   @media screen and (min-width: 1200px) {
-  font-size: 20px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: 1920px) {
-  font-size: 28px;
+    font-size: 28px;
   }
 }
 
@@ -251,11 +248,11 @@ position: relative;
   gap: 2px;
 
   @media screen and (min-width: 1200px) {
-  gap: 4px;
+    gap: 4px;
   }
 
   @media screen and (min-width: 1920px) {
-  gap: 6px;
+    gap: 6px;
   }
 }
 
@@ -272,11 +269,11 @@ position: relative;
   // flex-grow: 0;
 
   @media screen and (min-width: 1200px) {
-  font-size: 14px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1920px) {
-  font-size: 18px;
+    font-size: 18px;
   }
 }
 
@@ -293,11 +290,11 @@ position: relative;
   // flex-grow: 0;
 
   @media screen and (min-width: 1200px) {
-  font-size: 14px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1920px) {
-  font-size: 18px;
+    font-size: 18px;
   }
 }
 
@@ -310,83 +307,84 @@ position: relative;
   margin: 10px auto 0px auto;
 
   @media screen and (min-width: 1200px) {
-  gap: 16px;
+    gap: 16px;
 
-  margin: 32px auto 0px auto;
+    margin: 32px auto 0px auto;
   }
 
   @media screen and (min-width: 1920px) {
-  gap: 20px;
+    gap: 20px;
 
-  margin: 70px auto 0px auto;
+    margin: 70px auto 0px auto;
   }
-
 }
 
 .review__dot-button {
-cursor: pointer;
-pointer-events: auto;
+  cursor: pointer;
+  pointer-events: auto;
   display: block;
 
   width: 6px;
   height: 6px;
 
-padding: 0;
+  padding: 0;
 
-border: none;
-outline: none;
+  border: none;
+  outline: none;
 
   border-radius: 50%;
 
   background: $background-gray;
 
   @media screen and (min-width: 1200px) {
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
   }
 
   @media screen and (min-width: 1920px) {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
   }
 
-&.active {
-  background: $text-secondary;
-pointer-events: none;
-}
+  &.active {
+    background: $text-secondary;
+    pointer-events: none;
+  }
 }
 
 .review__slide-agent-icon {
-    @media screen and (min-width: 1200px) {
-width: 28px;
-height: 28px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 28px;
+    height: 28px;
+  }
 
-    @media screen and (min-width: 1920px) {
-width: 32px;
-height: 32px;
-    }
+  @media screen and (min-width: 1920px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .review__slide-img {
-min-width: 400px;
+  min-width: 400px;
   height: auto;
-width: 100%;
+  width: 100%;
   @media screen and (min-width: 1200px) {
-width: 740px;  }
+    width: 740px;
+  }
 
   @media screen and (min-width: 1920px) {
-width: 840px;  }
+    width: 840px;
+  }
 }
 
 .review__slide-agent-img {
   @media screen and (min-width: 1200px) {
-width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
   }
 
   @media screen and (min-width: 1920px) {
-width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
   }
 }

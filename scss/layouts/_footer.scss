@@ -1,23 +1,20 @@
 .footer-container {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-gap: 24px;
-  // height: 180px;
+  gap: 24px;
 
-    @media screen and (min-width: 1200px) {
-flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-gap: 88px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 88px;
+  }
 
-    }
-
-    @media screen and (min-width: 1920px) {
-gap: 108px;
-    }
-
+  @media screen and (min-width: 1920px) {
+    gap: 108px;
+  }
 }
 
 .footer__left-side {
@@ -28,19 +25,16 @@ gap: 108px;
 
   width: 100%;
 
-    @media screen and (min-width: 1200px) {
-  align-items: flex-start;
-  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+    justify-content: center;
 
     width: 320px;
+  }
 
-    }
-
-    @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1920px) {
     width: 420px;
-
-    }
-
+  }
 }
 
 .footer__text {
@@ -48,8 +42,8 @@ gap: 108px;
   font-size: 10px;
   line-height: 1.71;
 
-text-align: center;
-width: 320px;
+  text-align: center;
+  width: 320px;
 
   color: $text-grey;
 
@@ -58,32 +52,32 @@ width: 320px;
   margin-top: 14px;
   margin-bottom: 20px;
 
-    @media screen and (min-width: 1200px) {
-  font-size: 14px;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 24px;
 
-text-align: left;
-width: auto;
-    }
+    text-align: left;
+    width: auto;
+  }
 
-    @media screen and (min-width: 1920px) {
-  font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 28px;
-    }
+  @media screen and (min-width: 1920px) {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
 }
 
 .footer__icon {
-    @media screen and (min-width: 1200px) {
-width: 32px;
-height: 32px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 32px;
+    height: 32px;
+  }
 
-    @media screen and (min-width: 1920px) {
-width: 36px;
-height: 36px;
-    }
+  @media screen and (min-width: 1920px) {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .footer__socials {
@@ -92,14 +86,13 @@ height: 36px;
   justify-content: center;
   gap: 20px;
 
-    @media screen and (min-width: 1200px) {
-  gap: 24px;
-    }
+  @media screen and (min-width: 1200px) {
+    gap: 24px;
+  }
 
-    @media screen and (min-width: 1920px) {
-  gap: 28px;
-    }
-
+  @media screen and (min-width: 1920px) {
+    gap: 28px;
+  }
 }
 
 .footer__icon {
@@ -113,24 +106,22 @@ height: 36px;
 
 .footer__right-side {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 24px;
 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 
-    @media screen and (min-width: 1200px) {
-flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+    gap: 88px;
+  }
 
-  gap: 88px;
-
-    }
-
-    @media screen and (min-width: 1920px) {
-  gap: 108px;
-    }
+  @media screen and (min-width: 1920px) {
+    gap: 108px;
+  }
 }
 
 .footer__right-side-title {
@@ -139,24 +130,23 @@ flex-direction: row;
   line-height: 1.22;
 
   text-transform: capitalize;
-text-align: center;
+  text-align: center;
 
   color: $text-footer;
 
   margin-bottom: 10px;
 
-    @media screen and (min-width: 1200px) {
-  font-size: 18px;
-  margin-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin-bottom: 24px;
 
-text-align: left;
-    }
+    text-align: left;
+  }
 
-    @media screen and (min-width: 1920px) {
-  font-size: 22px;
-  margin-bottom: 28px;
-    }
-
+  @media screen and (min-width: 1920px) {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
 }
 
 .footer__property-link,
@@ -172,7 +162,7 @@ text-align: left;
   white-space: nowrap;
 
   text-transform: capitalize;
-text-align: center;
+  text-align: center;
 
   color: $text-grey;
 
@@ -181,15 +171,15 @@ text-align: center;
     color: $text-footer;
   }
 
-    @media screen and (min-width: 1200px) {
-  font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
 
-text-align: left;
-    }
+    text-align: left;
+  }
 
-    @media screen and (min-width: 1920px) {
-  font-size: 16px;
-    }
+  @media screen and (min-width: 1920px) {
+    font-size: 16px;
+  }
 }
 
 .footer__right-side-list {
@@ -199,15 +189,13 @@ text-align: left;
   justify-content: center;
   gap: 4px;
 
-    @media screen and (min-width: 1200px) {
-  align-items: flex-start;
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
 
-  gap: 18px;
-    }
+    gap: 18px;
+  }
 
-    @media screen and (min-width: 1920px) {
-  gap: 22px;
-    }
-
+  @media screen and (min-width: 1920px) {
+    gap: 22px;
+  }
 }
-

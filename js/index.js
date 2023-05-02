@@ -8,29 +8,28 @@ optionsBox.addEventListener("click", toggleSelect);
 
 function toggleSelect() {
   optionsBox.classList.toggle("is-hidden");
-if(optionsBox.classList.contains('is-hidden') && window.innerWidth <= 1200) {
-select.style.margin = '0px';
-} else if(!optionsBox.classList.contains('is-hidden') && window.innerWidth <= 1200) {select.style.margin = '0px 0px 40px 0px'}
+  if (optionsBox.classList.contains("is-hidden") && window.innerWidth <= 1200) {
+    select.style.margin = "0px";
+  } else if (
+    !optionsBox.classList.contains("is-hidden") &&
+    window.innerWidth <= 1200
+  ) {
+    select.style.margin = "0px 0px 40px 0px";
+  }
 }
 
 const btnMenu = document.querySelector(".header__menu-btn");
 const menu = document.querySelector(".header__menu");
 const iconMenu = document.querySelector(".header__menu-btn-icon-use");
-// menu.style.visibility = "hidden";
+
 btnMenu.addEventListener("click", onClickMenu);
 
 function onClickMenu() {
-// console.log(document.querySelector(".header__menu").style)
   if (menu.style.visibility === "visible" && window.innerWidth <= 1200) {
-// console.log('hidden')
-    menu.style.removeProperty('visibility');
+    menu.style.removeProperty("visibility");
     iconMenu.setAttribute("href", "./assets/sprite.svg#icon_menu");
     iconMenu.style.fill = "#F0F3FD";
-  } else 
-// if (menu.style.visibility === "hidden" && window.innerWidth <= 1200) 
-{
-// console.log('visible')
-
+  } else {
     menu.style.visibility = "visible";
     iconMenu.setAttribute("href", "./assets/sprite.svg#icon_menu-close");
     iconMenu.style.fill = "#1B1C57";
@@ -67,16 +66,10 @@ const ulRecom = document.querySelector(".recommendation__slides");
 
 let liRecom = cards;
 
-// const vw = Math.max(
-//   document.documentElement.clientWidth || 0,
-//   window.innerWidth || 0
-// );
-
 function countCards() {
   return Math.floor((ulRecom.clientWidth - gap) / (cardWidth + gap));
 }
 
-// const vw = ulRecom.getBoundingClientRect().width;
 const gap = Number(
   document.defaultView.getComputedStyle(ulRecom).gap.split("px")[0]
 );
@@ -170,10 +163,6 @@ window.addEventListener("resize", () => {
 });
 
 function recomSlyder(min, max, array) {
-  // console.log('recom')
-  // console.log('min ', min)
-  // console.log('max ', max)
-
   checkEnd(min, max, liRecom);
   const insert = array.slice(min, max);
   ulRecom.innerHTML = insert.map((e) => e.outerHTML).join("");

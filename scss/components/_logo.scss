@@ -5,10 +5,10 @@
   gap: 12px;
 
   width: fit-content;
-margin-left: 20px;
+  margin-left: 20px;
 
   @media screen and (min-width: 1200px) {
-margin-left: 0px;
+    margin-left: 0px;
     gap: 14px;
   }
 
@@ -36,13 +36,13 @@ margin-left: 0px;
 }
 
 .logo__icon {
-    @media screen and (min-width: 1200px) {
-width: 36px;
-height: 36px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 36px;
+    height: 36px;
+  }
 
-    @media screen and (min-width: 1920px) {
-width: 40px;
-height: 40px;
-    }
+  @media screen and (min-width: 1920px) {
+    width: 40px;
+    height: 40px;
+  }
 }
