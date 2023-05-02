@@ -314,6 +314,7 @@ body {
   position: relative;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
+  overflow-x: hidden;
 }
 
 img {
@@ -620,12 +621,12 @@ svg {
 .blur.recommendation__blur {
   background-color: #ff9882;
   top: 612px;
-  left: 920px;
+  right: -214px;
 }
 .blur.sell__blur {
   background-color: #fffa82;
   top: -48px;
-  left: 979px;
+  right: -273px;
 }
 .blur.review__blur {
   background-color: #82ffe8;
@@ -639,13 +640,13 @@ svg {
 }
 .blur.subscribe__blur {
   background-color: #82bbff;
-  left: 1026px;
+  right: -320px;
   top: 342px;
 }
 .blur.footer__blur {
   background-color: #b9ff82;
   top: -22px;
-  left: 780px;
+  right: -74px;
 }
 
 .header {

@@ -23,6 +23,7 @@ const menu = document.querySelector(".header__menu");
 const iconMenu = document.querySelector(".header__menu-btn-icon-use");
 
 btnMenu.addEventListener("click", onClickMenu);
+btnMenu.addEventListener("touchend", onClickMenu);
 
 function onClickMenu() {
   if (menu.style.visibility === "visible" && window.innerWidth <= 1200) {
