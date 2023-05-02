@@ -5,8 +5,10 @@
   gap: 12px;
 
   width: fit-content;
+margin-left: 20px;
 
   @media screen and (min-width: 1200px) {
+margin-left: 0px;
     gap: 14px;
   }
 

@@ -8,6 +8,33 @@ optionsBox.addEventListener("click", toggleSelect);
 
 function toggleSelect() {
   optionsBox.classList.toggle("is-hidden");
+if(optionsBox.classList.contains('is-hidden') && window.innerWidth <= 1200) {
+select.style.margin = '0px';
+} else if(!optionsBox.classList.contains('is-hidden') && window.innerWidth <= 1200) {select.style.margin = '0px 0px 40px 0px'}
+}
+
+const btnMenu = document.querySelector(".header__menu-btn");
+const menu = document.querySelector(".header__menu");
+const iconMenu = document.querySelector(".header__menu-btn-icon-use");
+// menu.style.visibility = "hidden";
+btnMenu.addEventListener("click", onClickMenu);
+
+function onClickMenu() {
+// console.log(document.querySelector(".header__menu").style)
+  if (menu.style.visibility === "visible" && window.innerWidth <= 1200) {
+// console.log('hidden')
+    menu.style.removeProperty('visibility');
+    iconMenu.setAttribute("href", "./assets/sprite.svg#icon_menu");
+    iconMenu.style.fill = "#F0F3FD";
+  } else 
+// if (menu.style.visibility === "hidden" && window.innerWidth <= 1200) 
+{
+// console.log('visible')
+
+    menu.style.visibility = "visible";
+    iconMenu.setAttribute("href", "./assets/sprite.svg#icon_menu-close");
+    iconMenu.style.fill = "#1B1C57";
+  }
 }
 
 //-Hero----------------------------------------//
@@ -45,14 +72,18 @@ let liRecom = cards;
 //   window.innerWidth || 0
 // );
 
-const vw = ulRecom.getBoundingClientRect().width;
+function countCards() {
+  return Math.floor((ulRecom.clientWidth - gap) / (cardWidth + gap));
+}
+
+// const vw = ulRecom.getBoundingClientRect().width;
 const gap = Number(
   document.defaultView.getComputedStyle(ulRecom).gap.split("px")[0]
 );
 const cardWidth = cards[0].getBoundingClientRect().width;
 
 let min = 0;
-let max = Math.floor((vw - gap) / (cardWidth + gap));
+let max = countCards();
 
 const inputs = document.querySelectorAll(".recommendation__input");
 const labels = document.querySelectorAll(".recommendation__label");
@@ -76,7 +107,7 @@ function onInputClick(e) {
       el.classList.contains(e.target.value) ? (el.style.color = "#888B97") : ""
     );
     min = 0;
-    max = Math.floor((vw - gap) / (cardWidth + gap));
+    max = countCards();
     liRecom = cards;
     recomSlyder(min, max, [...cards]);
     return;
@@ -114,10 +145,7 @@ function onInputClick(e) {
 
   liRecom = document.querySelectorAll(".recommendation__slide");
   min = 0;
-  max =
-    Math.floor((vw - gap) / (cardWidth + gap)) > liRecom.length
-      ? liRecom.length
-      : Math.floor((vw - gap) / (cardWidth + gap));
+  max = countCards() > liRecom.length ? liRecom.length : countCards();
   recomSlyder(min, max, [...liRecom]);
 }
 
@@ -130,7 +158,22 @@ btns.forEach((btn) => btn.addEventListener("click", move));
 
 recomSlyder(min, max, [...liRecom]);
 
+let timeout = false;
+
+window.addEventListener("resize", () => {
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    min = 0;
+    max = countCards();
+    recomSlyder(min, max, [...liRecom]);
+  }, 500);
+});
+
 function recomSlyder(min, max, array) {
+  // console.log('recom')
+  // console.log('min ', min)
+  // console.log('max ', max)
+
   checkEnd(min, max, liRecom);
   const insert = array.slice(min, max);
   ulRecom.innerHTML = insert.map((e) => e.outerHTML).join("");
